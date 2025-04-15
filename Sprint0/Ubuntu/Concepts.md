@@ -1,6 +1,6 @@
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
-| Aditya Tripathi   | 14-04-25    | version 1  | Aditya Tripathi        | 15-04-25       |
+| Aditya Tripathi   | 14-04-25    | version 2  | Aditya Tripathi        | 15-04-25       |
 
 
 # Ubuntu Installation and Concepts Documentation
@@ -152,3 +152,14 @@ The `/etc` directory contains system-wide configuration files. These files contr
 * **Network Configuration:** `ip addr`, `ifconfig` (may need to install `net-tools`), `netplan`
 * **File Permissions:** `chmod`, `chown`
 * **Text Editing:** `nano`, `vim`
+
+
+## Contact Information
+| Name         | Email address          |
+|--------------|------------------------|
+| Aditya Tripathi          | aditya.tripathi.snaatak@mygurukulam.co     |
+
+## Reference Links
+| Links        | Descriptions         |
+|--------------|------------------------|
+|    asdasd       | abc@mygurukulam.co     |
