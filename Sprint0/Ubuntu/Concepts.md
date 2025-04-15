@@ -153,10 +153,10 @@ Move to /usr/local/bin/
 
 ---
 
-Configuration Files in /etc
+## Configuration Files in /etc
 Location for system-wide configuration files
 
-## Examples:
+Examples:
 
 /etc/hostname
 
@@ -190,7 +190,7 @@ Understand when to use binary or repo-based install
 
 ## Common Ubuntu Operations
 
-## Task	 ## Command
+Task Command
 Update System	sudo apt update && sudo apt upgrade
 Add User	sudo adduser username
 Change Hostname	sudo hostnamectl set-hostname new
