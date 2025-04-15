@@ -1,3 +1,8 @@
+| Author      | Created on  | Version    | Last updated by | Last edited on |
+|-------------|-------------|------------|-----------------|----------------|
+| Aditya Tripathi   | 14-04-25    | version 1  | Aditya Tripathi        | 25-04-25       |
+
+
 # Ubuntu Installation and Concepts Documentation
 
 This document provides a comprehensive guide to installing and managing Ubuntu, focusing on version 22.04 (Jammy Jellyfish). It covers essential concepts, best practices, and common operations.
