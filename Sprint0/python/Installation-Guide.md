@@ -121,6 +121,7 @@ This section provides installation instructions for different operating systems.
 sudo apt update
 sudo apt install python3  # Installs the latest stable Python 3
 sudo apt install python3-pip python3-venv #install pip and venv
+```
 
 ## macOS
 
