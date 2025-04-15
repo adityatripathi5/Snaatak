@@ -163,5 +163,4 @@ The `/etc` directory contains system-wide configuration files. These files contr
 | Links        | Descriptions         |
 |--------------|------------------------|
 |    https://shorturl.at/Uhogh 
-https://shorturl.at/0WUPt     | Explore the technical reasons behind my preference for Ubuntu, focusing on its efficiency, compatibility with development tools, and cost-effectiveness.  
-A detailed documentation on systemd   |
+https://shorturl.at/0WUPt     | Explore the technical reasons behind my preference for Ubuntu, focusing on its efficiency, compatibility with development tools, and cost-effectiveness.  A detailed documentation on systemd   |
