@@ -123,13 +123,13 @@ Ubuntu uses systemd to manage services.
 
 ## Common Commands:
 
-# Start a service
+### Start a service
 sudo systemctl start nginx
 
-# Enable on boot
+### Enable on boot
 sudo systemctl enable nginx
 
-# Check status
+### Check status
 sudo systemctl status nginx
 
 ---
