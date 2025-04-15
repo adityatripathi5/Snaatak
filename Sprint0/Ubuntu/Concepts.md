@@ -86,7 +86,7 @@ sudo apt upgrade
 
 ## Difference: update vs upgrade
 
-### Command	### Purpose
+Command	Purpose
 apt update	Refreshes the local package index
 apt upgrade	Installs the newest versions of all packages
 
