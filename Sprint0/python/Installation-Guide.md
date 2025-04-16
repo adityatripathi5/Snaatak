@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/83c710bd-f6b7-42bf-a2c5-042d4fe43d60)
+
+
 | Author      | Created on  | Version    | Last updated by | Last edited on |
 |-------------|-------------|------------|-----------------|----------------|
 | Aditya Tripathi   | 15-04-25    | version 1  | N/A       | N/A       |
@@ -266,5 +269,5 @@ Having multiple Python versions is crucial for compatibility. Here's how to mana
 ## Reference Links
 | Links        | Descriptions         |
 |--------------|------------------------|
-|    https://shorturl.at/Uhogh | Explore the technical reasons behind my preference for Ubuntu, focusing on its efficiency, compatibility with development tools, and cost-effectiveness. |
-https://shorturl.at/0WUPt     |   A detailed documentation on systemd.   |
+|    https://shorturl.at/Xi9Xo | A detailed Python Installation Guide on Mac |
+https://shorturl.at/fmSFf     |   A detailed Python Installation Guide on Ubuntu    |
