@@ -1,3 +1,9 @@
+
+
+| Author      | Created on  | Version    | Last updated by | Last edited on |
+|-------------|-------------|------------|-----------------|----------------|
+| Aditya Tripathi   | 16-04-25    | version 1  | N/A       | N/A       |
+
 # Python requirements.txt Guide
 
 This document provides a comprehensive guide to using `requirements.txt` for managing Python project dependencies, with a focus on Observability Tools (OT) and microservice development.
@@ -139,3 +145,14 @@ After installing the dependencies, verify the installation:
 * **Document Why a Package is Needed:** For complex projects, consider adding comments to your `requirements.txt` file to explain why a particular package is required.
 * **Use `pip-tools` for Complex Projects:** For more complex projects, consider using `pip-tools` (`pip install pip-tools`). It provides `pip-compile` (which generates a `requirements.txt` file with pinned, transitive dependencies) and `pip-sync` (which synchronizes a virtual environment with a compiled `requirements.txt`).
 * **Commit requirements.txt to Version Control:** Always include your `requirements.txt` file in your project's version control system (e.g., Git).
+
+## Contact Information
+| Name         | Email address          |
+|--------------|------------------------|
+| Aditya Tripathi          | aditya.tripathi.snaatak@mygurukulam.co     |
+
+## Reference Links
+| Links        | Descriptions         |
+|--------------|------------------------|
+|    https://www.freecodecamp.org/news/python-requirementstxt-explained/ | Python Requirements.txt – How to Create and Pip Install Requirements.txt in Python |
+https://shorturl.at/1Wwmf   |   How can I install packages using pip according to the requirements.txt file from a local directory?    |
