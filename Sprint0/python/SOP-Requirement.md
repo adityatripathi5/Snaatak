@@ -14,7 +14,7 @@ This document provides a comprehensive guide to using `requirements.txt` for man
 
 ## What is a requirements.txt file?
 
-A `requirements.txt` file is a text file that lists the Python packages and their versions that a project depends on.  It's used to ensure that anyone working on the project, or deploying the project, has the exact same dependencies.  This helps avoid "it works on my machine" problems.
+A `requirements.txt` file is a text file that lists the Python packages and their versions that a project depends on.  It's used to ensure that anyone working on the project, or deploying the project, has the exact same dependencies.  This helps avoid "it works only on my machine" problems.
 
 ## Commands to Create a requirements.txt file
 
