@@ -8,8 +8,8 @@ This document provides an introduction to the Make build automation tool, its pu
 
 ## Table of Contents
 
-1.  [What is Make?](#whatismake)
-2.  [Why Use Make?](#whyusemake)
+1.  [What is Make?](#What-is-Make)
+2.  [Why Use Make?](#Why-Use-Make)
 3.  [History of Make](#historyofmake)
 4.  [How Make Works](#how-make-works)
 5.  [What is a Makefile?](#what-is-a-makefile)
