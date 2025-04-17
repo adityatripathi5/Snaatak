@@ -90,7 +90,7 @@ By default, Make looks for files named `Makefile` or `makefile` (case-sensitive)
 
 * **Legacy:** Many existing projects and build systems rely on Make, ensuring its continued relevance.
 
-## 8. Best Practices
+## 7. Best Practices
 
 * **Keep Makefiles Organized:** Structure your Makefiles logically, using comments and consistent naming conventions.
 
@@ -106,7 +106,7 @@ By default, Make looks for files named `Makefile` or `makefile` (case-sensitive)
 
 * **Document Your Makefile:** Add comments to explain the purpose of each rule and any non-obvious commands.
 
-## 9. Conclusion
+## 8. Conclusion
 
 Make is a powerful and versatile tool for automating build processes and other tasks. While newer build systems exist, Make remains relevant due to its simplicity, ubiquity, and generality.  Understanding Make is a valuable skill for any developer, especially those working with compiled languages or managing complex workflows.
 
