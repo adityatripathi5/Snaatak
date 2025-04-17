@@ -10,14 +10,14 @@ This document provides an introduction to Ansible Playbooks, a core component of
 
 ## Table of Contents
 
-1.  [What is an Ansible Playbook?](#what-is-an-ansible-playbook)
-2.  [Structure of a Playbook](#structure-of-a-playbook)
-3.  [Modules and Tasks](#modules-and-tasks)
-4.  [Variables and Templates](#variables-and-templates)
-5.  [Handlers and Notifications](#handlers-and-notifications)
-6.  [Conditionals, Loops, and Tags](#conditionals-loops-and-tags)
-7.  [Best Practices & Folder Structure](#best-practices--folder-structure)
-8.  [Conclusion](#conclusion)
+1. [What is an Ansible Playbook?](#1-what-is-an-ansible-playbook)
+2. [Structure of a Playbook](#2-structure-of-a-playbook)
+3. [Modules and Tasks](#3-modules-and-tasks)
+4. [Variables and Templates](#4-variables-and-templates)
+5. [Handlers and Notifications](#5-handlers-and-notifications)
+6. [Conditionals, Loops, and Tags](#6-conditionals-loops-and-tags)
+7. [Best Practices & Folder Structure](#7-best-practices--folder-structure)
+8. [Conclusion](#8-conclusion)
 
 ## 1. What is an Ansible Playbook?
 
