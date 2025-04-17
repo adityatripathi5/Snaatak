@@ -32,7 +32,7 @@ This document provides an introduction to Ansible Playbooks, a core component of
 
 Ansible Playbooks are the primary way to configure and manage systems with Ansible. They allow you to define the desired state of your infrastructure in a declarative way.
 
-## Why Playbooks?
+## 2. Why Playbooks?
 
 Ansible Playbooks offer several advantages:
 
@@ -44,7 +44,7 @@ Ansible Playbooks offer several advantages:
 * **Reusability:** Playbooks can be reused across different environments and projects.
 * **Simplicity:** YAML syntax makes playbooks easy to write and understand.
 
-## Features of Playbooks
+## 3. Features of Playbooks
 
 * **Declarative:** Define the desired state, not the steps to achieve it.
 * **Idempotent:** Running the same playbook multiple times produces the same outcome.
@@ -54,7 +54,7 @@ Ansible Playbooks offer several advantages:
 * **Orchestration:** Manage multi-tier applications.
 * **Reporting:** Provide detailed output of playbook execution.
 
-## 2. Structure of a Playbook
+## 4. Structure of a Playbook
 
 | Component    | Description                                                                                                                                                                                                                                                                                          |
 | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,7 +88,7 @@ Ansible Playbooks offer several advantages:
 
 YAML uses indentation (spaces, not tabs) to define the structure and hierarchy of the playbook. Consistent indentation is crucial for YAML to be parsed correctly. Key-value pairs are common, where a key is followed by a colon and a space, and the value. Lists are indicated by a hyphen and a space.
 
-## 3. Modules and Tasks
+## 5. Modules and Tasks
 
 | Concept        | Description                                                                                                                                                                                                                                                                                          |
 | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +96,7 @@ YAML uses indentation (spaces, not tabs) to define the structure and hierarchy o
 | Common Modules | `apt`/`yum` (package management), `copy` (file copying), `template` (file templating), `service` (service management), `user` (user management), `file` (file/directory operations), `command`/`shell` (executing arbitrary commands).                                                                 |
 | Tasks Execution| Tasks within a play are executed sequentially, one after the other, on the specified hosts. Ansible waits for each task to complete before moving to the next.                                                                                                                                       |
 
-## 4. Variables and Templates
+## 6. Variables and Templates
 
 | Concept         | Description                                                                                                                                                                                                                                                                                          |
 | :-------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,7 +104,7 @@ YAML uses indentation (spaces, not tabs) to define the structure and hierarchy o
 | Jinja2 Templating| Ansible uses the Jinja2 templating engine to dynamically generate content in configuration files or commands. Variables can be embedded within template files using Jinja2 syntax (`{{ variable_name }}`).                                                                                             |
 | Example         | You can use a template file (`httpd.conf.j2`) to configure an Apache web server. Variables for the server name, port, etc., can be defined in your playbook or inventory and rendered into the final `httpd.conf` file on the target host using the `template` module.                               |
 
-## 5. Handlers and Notifications
+## 7. Handlers and Notifications
 
 | Concept        | Description                                                                                                                                                                                                                                                                                          |
 | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,7 +112,7 @@ YAML uses indentation (spaces, not tabs) to define the structure and hierarchy o
 | Notifications  | Tasks can notify handlers using the `notify` keyword. If a task that notifies a handler results in a change on the managed host, the handler will be executed at the end of the current play. Multiple notifications to the same handler will only result in the handler being run once.                |
 | Use Case       | For example, if you modify the Apache configuration file using the `template` module, you can notify a handler that restarts the `httpd` service. The service will only be restarted if the configuration file was actually changed.                                                                 |
 
-## 6. Conditionals, Loops, and Tags
+## 8. Conditionals, Loops, and Tags
 
 | Concept        | Description                                                                                                                                                                                                                                                                                          |
 | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,7 +120,7 @@ YAML uses indentation (spaces, not tabs) to define the structure and hierarchy o
 | Loops          | Ansible provides several ways to iterate over lists or dictionaries using keywords like `with_items`, `loop`, `with_dict`, etc. This allows you to perform the same task multiple times with different parameters.                                                                                   |
 | Tags           | Tags are labels that you can apply to plays and tasks. You can then use the `--tags` or `--skip-tags` command-line options to run only specific parts of a playbook or to skip certain tasks. This is useful for running specific configurations or skipping potentially time-consuming tasks.           |
 
-## 7. Best Practices & Folder Structure
+## 9. Best Practices & Folder Structure
 
 | Practice             | Description                                                                                                                                                                                                                                                                                          |
 | :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -128,7 +128,7 @@ YAML uses indentation (spaces, not tabs) to define the structure and hierarchy o
 | Version Control    | Always store your playbooks, inventory files, and variable files in a version control system like Git. This allows you to track changes, collaborate effectively, and easily revert to previous versions.                                                                                             |
 | Idempotence        | Ensure your playbooks are idempotent. This means that running the same playbook multiple times should result in the same system state without making unnecessary changes. Ansible modules are generally designed to be idempotent.                                                                 |
 
-## 8. Conclusion
+## 10. Conclusion
 
 Ansible Playbooks are a powerful and flexible way to automate system configuration and management. By understanding their structure, the use of modules, variables, handlers, and best practices, you can effectively leverage Ansible to manage your infrastructure in a consistent and efficient manner.
 
