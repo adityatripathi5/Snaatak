@@ -11,7 +11,7 @@ This document provides an introduction to Ansible Playbooks, a core component of
 ## Table of Contents
 
 1. [What is an Ansible Playbook?](#1-what-is-an-ansible-playbook)
-2. [Why Use Playbooks?](#2-why-use-playbooks)
+2. [Why Use Playbooks?](#2-why-playbooks)
 3. [Features of Playbooks](#3-features-of-playbooks)
 4. [Structure of a Playbook](#4-structure-of-a-playbook)
 5. [Modules and Tasks](#5-modules-and-tasks)
