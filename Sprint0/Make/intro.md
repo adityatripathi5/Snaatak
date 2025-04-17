@@ -14,9 +14,8 @@ This document provides an introduction to the Make build automation tool, its pu
 4.  [How Make Works](#how-make-works)
 5.  [What is a Makefile?](#what-is-a-makefile)
 6.  [Common Use Cases](#common-use-cases)
-7.  [Comparison with Alternatives](#comparison-with-alternatives)
-8.  [Best Practices](#best-practices)
-9. [Conclusion](#conclusion)
+7.  [Best Practices](#best-practices)
+8.  [Conclusion](#conclusion)
 
 ## 1. What is Make?
 
@@ -80,16 +79,6 @@ By default, Make looks for files named `Makefile` or `makefile` (case-sensitive)
 | Documentation Generation | Generating documentation from source code or other input files (e.g., using tools like Doxygen or Sphinx). | 
 | Cleaning Temporary Files | Removing intermediate files, object files, or other temporary files created during the build process. | 
 | Managing File Dependencies | Ensuring files are processed in the correct order, such as converting images or processing data files. | 
-
-## 7. Comparison with Alternatives
-
-| Tool | Description | Relevance to Make | 
- | ----- | ----- | ----- | 
-| npm scripts | Task runner for Node.js projects, defined in `package.json`. | Similar in purpose for web development, but less focused on compiled languages. Make is more general-purpose. | 
-| Shell scripts | Scripts written in a shell language (e.g., Bash) to automate commands. | Can be used within Makefiles, but Make provides dependency tracking and a more structured approach. Shell scripts lack Make's built-in dependency management. | 
-| CMake | Cross-platform build system generator that produces native build files (e.g., Makefiles, Visual Studio projects). | A higher-level tool that *can* generate Makefiles, offering better cross-platform support for complex C/C++ projects. Solves some of Make's portability issues. | 
-| Bazel | Google's build system, designed for large, multi-language projects. | More powerful and complex than Make, with advanced features like caching and distributed builds. Overkill for small to medium-sized projects where Make is sufficient. | 
-| Gradle | A build automation tool primarily used for Java projects. | Similar in purpose to Make, but focused on the Java ecosystem. Make is language-agnostic. | 
 
 **Why Make is still relevant:**
 
