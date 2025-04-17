@@ -1,6 +1,6 @@
 | Author          | Created on | Version   | Last updated by | Last edited on | Internal Reviewer | L0  | L1  | L2  |
 |-----------------|------------|-----------|------------------|----------------|--------------------|-----|-----|-----|
-| Aditya Tripathi | 16-04-25   | version 1 | N/A              | N/A            | Priyanshu                | Khushi | Rishabh | Piyush |
+| Aditya Tripathi | 16-04-25   | version 1 | N/A              | N/A            | Priyanshu         | Khushi | Rishabh | Piyush |
 
 # Introduction to Make
 
@@ -8,9 +8,9 @@ This document provides an introduction to the Make build automation tool, its pu
 
 ## Table of Contents
 
-1.  [What is Make?](#What-is-Make)
-2.  [Why Use Make?](#Why-Use-Make)
-3.  [History of Make](#historyofmake)
+1.  [What is Make?](#what-is-make)
+2.  [Why Use Make?](#why-use-make)
+3.  [History of Make](#history-of-make)
 4.  [How Make Works](#how-make-works)
 5.  [What is a Makefile?](#what-is-a-makefile)
 6.  [Common Use Cases](#common-use-cases)
