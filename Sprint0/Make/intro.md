@@ -8,14 +8,14 @@ This document provides an introduction to the Make build automation tool, its pu
 
 ## Table of Contents
 
-1.  [What is Make?](#-what-is-make)
-2.  [Why Use Make?](#-why-use-make)
-3.  [History of Make](#-history-of-make)
-4.  [How Make Works](#how-make-works)
-5.  [What is a Makefile?](#what-is-a-makefile)
-6.  [Common Use Cases](#common-use-cases)
-7.  [Best Practices](#best-practices)
-8.  [Conclusion](#conclusion)
+1. [What is Make?](#1-what-is-make)
+2. [Why Use Make?](#2-why-use-make)
+3. [History of Make](#3-history-of-make)
+4. [How Make Works](#4-how-make-works)
+5. [What is a Makefile?](#5-what-is-a-makefile)
+6. [Common Use Cases](#6-common-use-cases)
+7. [Best Practices](#7-best-practices)
+8. [Conclusion](#8-conclusion)
 
 ## 1. What is Make?
 
