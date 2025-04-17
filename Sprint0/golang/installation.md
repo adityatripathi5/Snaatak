@@ -10,17 +10,19 @@ This document provides a step-by-step guide to installing Golang, covering vario
 
 ## Table of Contents
 
-1.  [Introduction](#introduction)
-2.  [What is Golang?](#what-is-golang)
-3.  [Pre-Checks](#pre-checks)
-4.  [Installation](#installation)
-    * [Most Widely Used Golang Version](#most-widely-used-golang-version)
-    * [Latest Golang Version](#latest-golang-version)
-    * [Legacy Applications (Older Golang Versions)](#legacy-applications-older-golang-versions)
-    * [OT/Microservices](#otmicroservices)
-5.  [Post-Checks](#post-checks)
-6.  [Best Practices](#best-practices)
-7.  [Conclusion](#conclusion)
+## Table of Contents
+
+1. [Introduction](#1-introduction)
+2. [What is Golang?](#2-what-is-golang)
+3. [Pre-Checks](#3-pre-checks)
+4. [Installation](#4-installation)  
+   - [Most Widely Used Golang Version](#most-widely-used-golang-version)  
+   - [Latest Golang Version](#latest-golang-version)  
+   - [Legacy Applications (Older Golang Versions)](#legacy-applications-older-golang-versions)  
+   - [OT/Microservices](#otmicroservices)  
+5. [Post-Checks](#5-post-checks)
+6. [Best Practices](#6-best-practices)
+7. [Conclusion](#7-conclusion)
 
 ## 1. Introduction
 
