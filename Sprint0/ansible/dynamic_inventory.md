@@ -152,7 +152,7 @@ Ansible Dynamic Inventory is a cornerstone feature for managing modern, scalable
 ## Contact Information
 | Name            | Email address                            |
 |-----------------|------------------------------------------|
-| Aditya Tripathi | aditya.tripathi.snaatak@mygurukulam.co   |
+| Rajeev Ranjan | rajeev.ranjan.snaatak@mygurukulam.co   |
 
 ## Reference Links
 | Links                                                   | Descriptions                                     |
