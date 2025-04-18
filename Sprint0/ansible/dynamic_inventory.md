@@ -2,7 +2,7 @@
 
 | Author          | Created on | Version   | Last updated by | Last edited on | Internal Reviewer | L0     | L1      | L2     |
 |-----------------|------------|-----------|------------------|----------------|--------------------|--------|---------|--------|
-| Aditya Tripathi | 20-07-24   | version 1 | N/A              | N/A            | Priyanshu          | Khushi | Rishabh | Piyush |
+| Rajeev Ranjan | 17-04-25   | version 1 | N/A              | N/A            | Priyanshu          | Khushi | Mukul | Piyush |
 
 # Operating System - Ansible - Dynamic Inventory - Introduction
 
@@ -81,7 +81,7 @@ Beyond cloud providers, dynamic inventory can integrate with various other syste
 *   **Databases:** If host information is stored in a relational database (e.g., PostgreSQL, MySQL) or NoSQL database, a script can connect and query it.
 *   **LDAP / Active Directory:** Can be queried for computer objects.
 *   **Custom APIs:** Internal asset management systems or applications might provide APIs to list hosts.
-*   **Virtualization Platforms:** Direct queries to APIs of platforms like Proxmox VE or oVirt might require custom scripts if specific plugins aren't available.
+*   **Virtualization Platforms:** Direct queries to APIs of platforms might require custom scripts if specific plugins aren't available.
 
 For these sources, you might need to write a custom dynamic inventory script (in Python, Go, Ruby, shell, etc.) ensuring it outputs the required JSON format when called with `--list` and potentially `--host <hostname>`.
 
@@ -139,10 +139,8 @@ There are several ways to tell Ansible to use a dynamic inventory source:
 
 *   **Prefer Plugins:** Use official or well-maintained community inventory plugins over custom scripts whenever possible for robustness and features.
 *   **Secure Credentials:** **Never** hardcode credentials (API keys, passwords) in scripts or configuration files. Use Ansible Vault, environment variables, cloud provider IAM roles/profiles, or secure credential management systems.
-*   **Implement Caching:** For sources like cloud APIs or CMDBs, querying can be slow or rate-limited. Configure caching (a feature often built into plugins or manually implementable in scripts) to store results temporarily. Define a reasonable cache timeout.
 *   **Filter Efficiently:** Query only the necessary data. Use filters (tags, regions, statuses) in your plugin configuration or script logic to avoid pulling the entire infrastructure state if not needed, improving performance and reducing API costs/limits.
 *   **Error Handling:** Ensure your custom scripts handle API errors, network issues, or missing data gracefully. They should ideally return an empty inventory or log errors clearly rather than crashing and halting Ansible.
-*   **Performance:** Optimize custom script performance, especially if querying slow external systems. Consider parallelization or more efficient queries if needed.
 *   **Executable Permissions:** Ensure custom inventory scripts have execute permissions (`chmod +x script.py`).
 *   **Testing:** Thoroughly test your dynamic inventory source using `ansible-inventory -i <source> --list` and `ansible-inventory -i <source> --graph` before using it in production playbooks. Check group structure and host variables.
 *   **Version Control:** Store your inventory scripts and plugin configuration files in version control (like Git) alongside your playbooks.
