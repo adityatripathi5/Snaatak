@@ -5,7 +5,7 @@
 
 # Operating System - Branching Strategy - Introduction
 
-This repository provides an introductory overview of branching strategies within the context of Operating System development and management. Understanding and implementing a well-defined branching strategy is crucial for collaborative development, maintaining code stability, and managing releases effectively in complex software projects like operating systems.
+This repository provides an introductory overview of branching strategies. Understanding and implementing a well-defined branching strategy is crucial for collaborative development, maintaining code stability, and managing releases effectively in complex software projects like OT-MICROSERVICES.
 
 ## Table of Contents
 
