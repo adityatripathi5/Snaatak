@@ -21,14 +21,7 @@ This repository provides an introductory overview of branching strategies within
 
 ## What is a Branching Strategy?
 
-A branching strategy is a set of conventions and guidelines that dictate how developers create, name, use, and merge branches within a version control system (like Git). It provides a structured approach to managing parallel development efforts, integrating changes, and maintaining different versions of the codebase.
-
-In the context of operating systems, which involve a large codebase and often multiple teams working concurrently, a robust branching strategy is essential for:
-
-* Isolating ongoing work from stable releases.
-* Facilitating the development of new features and bug fixes.
-* Managing different release cycles and maintenance versions.
-* Enabling collaboration among a large number of contributors.
+A branching strategy is a way to organize work in a version control system like Git. It helps teams manage code changes by using different branches for features, fixes, and releases, this keeps the main code stable while allowing developers to work independently.
 
 ## Why is a Branching Strategy Important?
 
@@ -37,9 +30,8 @@ A well-defined branching strategy is fundamental to modern software development,
 *   **Enables Effective Delivery Pipelines:** Branching is core to CI/CD (Continuous Integration/Continuous Delivery), allowing automated builds, tests, and deployments to be triggered based on branch activity (e.g., merging a feature branch, creating a release branch).
 *   **Structures Team Collaboration:** It provides a clear, shared workflow for how developers contribute, review (via Pull/Merge Requests), and integrate code, which is essential for coordinating large or distributed teams.
 *   **Facilitates Robust Versioning:** Branching allows for the clear separation and management of different codebase states (e.g., development, stable release, experimental features), making version tracking and maintenance feasible.
-*   **Supports Predictable and Robust Delivery:** By isolating release preparation (e.g., on a `release` branch), teams can stabilize and test upcoming versions without halting new development, leading to more reliable releases.
 *   **Simplifies Rollbacks and Hotfixes:** Isolating changes within branches makes it significantly easier and safer to revert problematic features or apply urgent fixes (hotfixes) directly to production versions without disrupting ongoing development efforts.
-*   **Provides Risk Containment:** New features or significant changes are developed in isolation, preventing potentially unstable code from impacting the main development line or stable releases until thoroughly tested and approved.
+
 
 ## Types of Branching Strategies
 
