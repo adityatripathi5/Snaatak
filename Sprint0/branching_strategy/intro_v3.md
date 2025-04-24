@@ -47,7 +47,7 @@ Several common branching strategies are used in software development. The choice
 ## Advantages of Branching Strategies
 
 | Advantage                                                                                   |
-|---------------------------------------------------------------------------------------------|
+|:---------------------------------------------------------------------------------------------|
 | Allows multiple developers/teams to work in **parallel** without interference.             |
 | Provides **isolated environments** for developing and testing new features/fixes.          |
 | **Mitigates the risk** of introducing breaking changes into the main codebase.             |
