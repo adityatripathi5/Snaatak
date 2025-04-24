@@ -71,8 +71,8 @@ Several common branching strategies are used in software development. The choice
 
 ## Best Practices
 
-| Description                                                                                 |
-|---------------------------------------------------------------------------------------------|
+|                                                                    |
+| :------------------------------------------------------------------------------------ |
 | **Choose the Right Strategy:** Select based on team size, project needs, release frequency. |
 | **Keep Branches Short-Lived:** Minimize merge conflicts by keeping branches brief.     |
 | **Utilize Pull Requests/Code Reviews:** Mandate reviews for quality and knowledge sharing. |
