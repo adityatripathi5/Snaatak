@@ -44,15 +44,16 @@ Several common branching strategies are used in software development. The choice
 * **Feature Branching Strategy:** Each new feature gets its own dedicated branch, typically off `develop` or `main`. Promotes isolated development and easier collaboration on large-scale features.
 * **Environment Branching Strategy:** Separate branches represent different deployment environments like `dev`, `qa`, `stage`, and `prod`. Useful for managing code across multiple environments, allowing targeted fixes or configuration for each.
 
-
 ## Advantages of Branching Strategies
 
-| Allows multiple developers/teams to work in **parallel** without interference.      |
-| Provides **isolated environments** for developing and testing new features/fixes.    |
-| **Mitigates the risk** of introducing breaking changes into the main codebase.        |
-| Enhances **code organization** and makes codebase history easier to track.          |
-| Reduces the risk of conflicts when integrating changes (compared to no branching).   |
-| Enables **easier rollback** of changes if issues arise post-merge.                  |
+| Advantage                                                                                   |
+|---------------------------------------------------------------------------------------------|
+| Allows multiple developers/teams to work in **parallel** without interference.             |
+| Provides **isolated environments** for developing and testing new features/fixes.          |
+| **Mitigates the risk** of introducing breaking changes into the main codebase.             |
+| Enhances **code organization** and makes codebase history easier to track.                 |
+| Reduces the risk of conflicts when integrating changes (compared to no branching).         |
+| Enables **easier rollback** of changes if issues arise post-merge.                         |
 
 ## Common Workflows
 
@@ -70,6 +71,8 @@ Several common branching strategies are used in software development. The choice
 
 ## Best Practices
 
+| Description                                                                                 |
+|---------------------------------------------------------------------------------------------|
 | **Choose the Right Strategy:** Select based on team size, project needs, release frequency. |
 | **Keep Branches Short-Lived:** Minimize merge conflicts by keeping branches brief.     |
 | **Utilize Pull Requests/Code Reviews:** Mandate reviews for quality and knowledge sharing. |
