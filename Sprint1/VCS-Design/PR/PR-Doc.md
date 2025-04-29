@@ -91,16 +91,16 @@ When creating Pull Requests, please adhere to the following rules to ensure clar
 
 # Best Practices
 
+## Pull Request Best Practices
 
-| **Best Practice**                     | **Purpose**                                                                                          | **Key Practices**                                                                                                         |
-|---------------------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Create Atomic and Focused Pull Requests** | Address one thing at a time for easier review.                                                      | - Break large tasks into smaller ones.<br> - Use a clear title describing the change.                                    |
-| **Write Descriptive Pull Request Descriptions** | Clearly explain what’s being changed and why.                                                        | - Describe the changes.<br> - Link to related issues.                                                                   |
-| **Request Code Reviews**             | Ask for feedback from team members to improve code.                                                  | - Tag reviewers to get their attention.                                                                                   |
-| **Run Automated Tests Before Submission** | Ensure your code works by running tests before submitting.                                           | - Run tests locally before pushing.<br> - Ensure CI checks pass before merging.                                          |
-| **Keep Pull Requests Updated**       | Sync your work with the latest code from the main branch to avoid conflicts.                          | - Update your branch regularly to stay in sync with the main branch.                                                     |
-| **Follow Coding Standards**          | Keep the code consistent and readable across the project.                                            | - Stick to the project's coding style.<br> - Use tools to automatically check code style.                                 |
+Here are some key things to keep in mind when creating pull requests:
 
+| **Best Practice** | **Description** | **In Practice** |
+| :---------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| **Small & Focused Changes** | Make each pull request about one specific fix or feature. | Break big tasks into smaller, manageable chunks. Each PR should do one thing. |
+| **Clear Explanations** | Tell people what your changes do and why.                 | Write a good title and description in your pull request. Link to related issues. |
+| **Get Your Code Checked** | Ask teammates to review your code before merging.        | Tag specific people to review your pull request and give feedback.           |
+| **Test Before You Submit** | Make sure your code works before submitting it.          | Run tests on your own computer first. Make sure automated checks pass.        |
 
  ### Conclusion
 Pull requests are a powerful tool that can significantly enhance the quality, efficiency, and collaboration of software development teams. By embracing PRs as a core part of their workflow, teams can deliver higher-quality software, faster.
