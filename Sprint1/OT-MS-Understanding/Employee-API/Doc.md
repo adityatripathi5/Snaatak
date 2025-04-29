@@ -83,7 +83,7 @@ Operating entirely within system memory, Redis allows for exceptionally fast dat
 
 For comprehensive setup instructions, refer to the [Redis Documentation](LINK).
 
-## Final Thought
+## Final Thoughts
 
 This Employee API demonstrates a thoughtful balance between performance, scalability, and maintainability within a microservices environment.  
 Its integration of ScyllaDB and optional Redis caching ensures responsiveness under load, while modular design enables easy collaboration and growth.  
