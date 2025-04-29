@@ -41,13 +41,13 @@ A Pull Request (PR) is a way to ask for your code changes to be added to a proje
 | **Version Control**  | Helps control when changes are added to the main project.                                    |
 
 
-# Steps to Create a Pull Request
+### Steps to Create a Pull Request
 **Please refer to the reference link for the installation and flowchart**
 | Link         | Description         |
 |--------------|------------------------|
 | [PR POC](LINK)          | POC  |
 
-# PR Rules
+### PR Rules
 
 When creating Pull Requests, please follow these rules to keep the process clear and efficient:
 
@@ -61,7 +61,7 @@ When creating Pull Requests, please follow these rules to keep the process clear
 | **Respond to Feedback**        | Reply to reviewer comments, make necessary changes, and engage in respectful discussions if needed.              |
 | **Update Your Branch**         | Regularly sync with the main branch to avoid or minimize merge conflicts.                                        |
 
-# Advantages
+### Advantages
 
 | **Benefit**                   | **What It Means**                                                                                      |
 |-------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@ When creating Pull Requests, please follow these rules to keep the process clear
 | **Easier for New Developers** | New team members learn how the code works and follow best practices by looking at pull request reviews. |
 | **Track Progress**            | Managers can see what’s being worked on, give feedback, and keep track of how the project is going.     |
 
-# Disadvantages
+### Disadvantages
 
 | **Downside**                  | **What It Means**                                                                                      |
 |-------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -80,7 +80,7 @@ When creating Pull Requests, please follow these rules to keep the process clear
 | **Slow Responses**            | It can take time to get reviews, which can hold up progress.                                           |
 | **Avoiding Improvements**     | Developers might skip cleaning up or improving code to keep pull requests short and easier to review.   |
 
-# Best Practices
+### Best Practices
 
 | **Best Practice** | **Description** | **In Practice** |
 | :---------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -89,7 +89,7 @@ When creating Pull Requests, please follow these rules to keep the process clear
 | **Get Your Code Checked** | Ask teammates to review your code before merging.        | Tag specific people to review your pull request and give feedback.           |
 | **Test Before You Submit** | Make sure your code works before submitting it.          | Run tests on your own computer first. Make sure automated checks pass.        |
 
- ### Conclusion
+### Conclusion
 Pull requests help teams work better together by making it easier to review and improve code. When used regularly, they lead to better-quality software and faster development.
 
 ### Contact Information
