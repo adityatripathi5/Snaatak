@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-1.  [**Overview**](#overview)
+1.  [**Introduction**](#introduction)
 2.  [**Objective**](#objective)
 3.  [**System Design**](#system-design)
 4.  [**Setup Requirements**](#setup-requirements)
@@ -17,7 +17,7 @@
 9.  [**Contact Information**](#contact-information)
 10. [**Reference Links**](#reference-links)
 
-## Overview
+## Introduction
 
 The Employee API is a RESTful Application Programming Interface developed in Golang, crafted specifically for the management of employee details. This system incorporates ScyllaDB to serve as its main database and utilizes Redis to handle caching tasks. The API has been constructed using the Gin framework, ensuring rapid and scalable handling of REST-based operations.
 
@@ -95,6 +95,11 @@ The Employee API represents a solid microservice engineered to handle employee d
 |--------------|------------------------|
 | Aditya Tripathi          | aditya.tripathi.snaatak@mygurukulam.co     |
 
-## Helpful Links
+## Reference Links
 
-*(Reference links corresponding to the original documentation would go here.)*
+| Links | Description      |
+|-----  |--------------------------|
+| [Application Template](https://github.com/OT-MICROSERVICES/documentation-template/wiki/Application-Template) | documentation-template |
+| [Employee-API repo](https://github.com/OT-MICROSERVICES/employee-api/tree/main?tab=readme-ov-file) | Employee-api | 
+| [What is scyllaDB](https://www.simplyblock.io/glossary/what-is-scylladb/)    | A walk from basic to advance on Scylladb |
+| [What is Redis](https://www.geeksforgeeks.org/introduction-to-redis-server/) | Detail Doc. on Redis |
