@@ -7,9 +7,9 @@
 | ABC    | 26-04-25   | version 1 | ABC             | 26-04-25       |                    |     |     |     |
 | ...    | ...        | ...       | ...             | ...            | ...                | ... | ... | ... |    
 
-## Purpose
+## What & Why/Purpose
 
-Explain the purpose of this application here. Describe why there was a need for this application and detail the specific problems it aims to solve.
+Explain the What,why of this application here. Describe why there was a need for this application and detail the specific problems it aims to solve.
 
 ## Pre-requisites
 
@@ -34,15 +34,6 @@ Before diving into application deployment, ensure the following Hardware, Softwa
 | `<application>` | `<version>` | `<Description>` |
 
 #### Run time Dependency
-
-| Name          | Version   | Description   |
-| :------------ | :-------- | :------------ |
-| `<application>` | `<version>` | `<Description>` |
-| `<application>` | `<version>` | `<Description>` |
-
-#### Other Dependency
-
-(Dependencies specific to integration with 3rd party applications)
 
 | Name          | Version   | Description   |
 | :------------ | :-------- | :------------ |
