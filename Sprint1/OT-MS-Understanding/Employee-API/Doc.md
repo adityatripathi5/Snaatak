@@ -37,8 +37,6 @@ The Employee API functions as a Go-language microservice intended to oversee all
 | ScyllaDB      | Access to a configured ScyllaDB instance with required keyspaces and tables. VM should have at least 20 GB RAM.       |
 | Redis (Optional) | Recommended for enabling caching, but not strictly required.                                                       |
 
-> All components must be network-accessible or exist within the same environment as the API.
-
 ## Capabilities
 
 | Capability                  | Explanation                                                                                               |
