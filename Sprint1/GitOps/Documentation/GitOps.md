@@ -7,15 +7,14 @@
 1.  [Introduction](#introduction)
 2.  [What is GitOps?](#what-is-gitops)
 3.  [Why GitOps? (Benefits)](#why-gitops-benefits)
-4.  [Core Principles of GitOps](#core-principles-of-gitops)
-5.  [Types of GitOps Workflows](#types-of-gitops-workflows)
+4.  [Types of GitOps Workflows](#types-of-gitops-workflows)
     *   [Push-based Workflow (CI-driven)](#push-based-workflow-ci-driven)
     *   [Pull-based Workflow (Operator-driven)](#pull-based-workflow-operator-driven)
     *   [Hybrid Workflow (Combined Approach)](#hybrid-workflow-combined-approach)
-6.  [Comparison: Push vs. Pull vs. Hybrid Workflows](#comparison-push-vs-pull-vs-hybrid-workflows)
-7.  [Conclusion](#conclusion)
-8.  [Contact Information](#contact-information)
-9.  [References](#references)
+5.  [Comparison: Push vs. Pull vs. Hybrid Workflows](#comparison-push-vs-pull-vs-hybrid-workflows)
+6.  [Conclusion](#conclusion)
+7.  [Contact Information](#contact-information)
+8.  [References](#references)
 
 ## Introduction
 
@@ -47,15 +46,6 @@ Adopting GitOps offers numerous advantages for development and operations teams:
 *   **Consistency & Standardization:** Git ensures that the configuration repository is the single source of truth, leading to consistent environments (dev, staging, prod).
 *   **Easier Auditing & Compliance:** The Git history provides a clear, immutable record of all changes, simplifying audits and compliance checks.
 *   **Disaster Recovery:** Re-creating infrastructure and applications becomes straightforward by pointing a new environment to the Git repository defining its desired state.
-
-## Core Principles of GitOps
-
-While implementations vary, GitOps generally adheres to these fundamental principles:
-
-1.  **Declarative Configuration:** The entire system state must be described declaratively.
-2.  **State Stored in Git:** The canonical desired system state is versioned in one or more Git repositories, acting as the source of truth.
-3.  **Changes Applied via Automation:** Approved changes merged into the tracked Git branch trigger automated processes that eventually lead to the desired state being applied.
-4.  **State Reconciliation:** Software agents ensure correctness and alert on divergence between the desired state in Git and the actual state of the system.
 
 ## Types of GitOps Workflows
 
