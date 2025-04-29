@@ -10,21 +10,16 @@
 3. [Why Pull Request](#why-pull-request)
 4. [Steps to Create a Pull Request](#steps-to-create-a-pull-request)
 5. [PR Rules](#pr-rules)
-6. [Advantages of Pull Requests](#advantages-of-pull-requests)
-7. [Disadvantages of Pull Requests](#disadvantages-of-pull-requests)
+6. [Advantages](#advantages)
+7. [Disadvantages](#disadvantages)
 8. [Best Practices](#best-practices)
 9. [Conclusion](#conclusion)
 10. [Contact Information](#contact-information)
 11. [References](#references)
 
-
-
 ### Introduction
 
-A **Pull Request (PR)** is like asking permission to add your changes to a project on GitHub. When you make changes to a project, you can send a PR to the project’s owners or team, who can then review, discuss, and approve your changes. It helps people work together and improve the project.
-
-
-
+A Pull Request (PR) is a way to ask for your code changes to be added to a project. It lets others on the team review your work, give feedback, and approve it before it becomes part of the main code. This helps teams work together and keep the project high quality.
 
 ### Features
 
@@ -34,7 +29,6 @@ A **Pull Request (PR)** is like asking permission to add your changes to a proje
 | **Discussion & Feedback** | Developers talk about the changes and give suggestions.                                          |
 | **Continuous Integration**| Automatically test the changes to make sure they don’t break anything in the project.            |
 | **Merge Control**         | Maintainers decide when and how to add the changes to the main project.                          ||
-
 
 ### Why Pull Request
 
@@ -52,48 +46,41 @@ A **Pull Request (PR)** is like asking permission to add your changes to a proje
 | Link         | Description         |
 |--------------|------------------------|
 | [PR POC](LINK)          | POC  |
-#
 
 # PR Rules
 
-When creating Pull Requests, please adhere to the following rules to ensure clarity and efficiency:
+When creating Pull Requests, please follow these rules to keep the process clear and efficient:
 
-*   **Keep it Small:** Each PR should address a single concern or feature. Avoid large, complex PRs.
-*   **Clear Title and Description:** The title should summarize the change concisely. The description should explain the *what* and *why* of the change, linking to relevant issues if applicable (e.g., `Fixes #123`).
-*   **Self-Review First:** Review your own code for potential issues, typos, or debugging code before submitting.
-*   **Ensure Tests Pass:** Run all relevant tests locally and ensure they pass before submitting the PR. CI checks must pass before merging.
-*   **Request Appropriate Reviewers:** Tag the relevant team members or code owners who should review the PR.
-*   **Respond to Feedback:** Address comments and feedback from reviewers promptly. Engage in constructive discussions.
-*   **Update Your Branch:** Keep your feature branch updated with the latest changes from the main branch to minimize merge conflicts.
+| **Rule**                        | **Explanation**                                                                                                   |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Keep it Small**              | Focus on one task or feature per PR. Avoid large or overly complex pull requests.                                |
+| **Clear Title and Description**| Use a brief, meaningful title. In the description, explain what the change is and why it’s needed. Link issues (e.g., `Fixes #123`). |
+| **Self-Review First**          | Look over your own code before submitting to catch bugs, typos, or unnecessary debug code.                       |
+| **Ensure Tests Pass**          | Run all relevant tests locally and confirm they pass. CI checks must also pass before merging.                    |
+| **Request Appropriate Reviewers** | Tag the right team members or code owners who should review the changes.                                          |
+| **Respond to Feedback**        | Reply to reviewer comments, make necessary changes, and engage in respectful discussions if needed.              |
+| **Update Your Branch**         | Regularly sync with the main branch to avoid or minimize merge conflicts.                                        |
 
-# Advantages of Pull Requests
+# Advantages
 
-| **Advantage**                  | **Description**                                                                                   |
-|--------------------------------|---------------------------------------------------------------------------------------------------|
-| **Increased Collaboration**     | Facilitates discussions and teamwork by allowing developers to collaborate on code changes.       |
-| **Reduced Errors**              | Enables multiple developers to review and test code, identifying bugs and security issues early.  |
-| **Learning Opportunities**      | Provides a platform for developers to learn new skills and stay updated by reviewing others' code.|
-| **Transparency**                | Offers visibility into code changes and their purpose, improving accountability.                 |
-| **Better Onboarding**           | Helps new developers understand the codebase and standards effectively through code reviews.      |
-| **Centralized Progress Tracking**| Acts as a hub for managers to monitor changes, provide feedback, and track development progress.  |
+| **Benefit**                   | **What It Means**                                                                                      |
+|-------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Teamwork**                  | Developers can work together easily by discussing and reviewing code changes.                          |
+| **Fewer Mistakes**            | Multiple people check the code, helping catch bugs or security issues early.                           |
+| **Clarity**                   | Everyone can see what changes are being made and why, making the process more open and clear.          |
+| **Easier for New Developers** | New team members learn how the code works and follow best practices by looking at pull request reviews. |
+| **Track Progress**            | Managers can see what’s being worked on, give feedback, and keep track of how the project is going.     |
 
-# Disadvantages of Pull Requests
+# Disadvantages
 
-| **Disadvantage**               | **Description**                                                                                   |
-|--------------------------------|---------------------------------------------------------------------------------------------------|
-| **Merge Conflicts**            | Increased chances of merge conflicts due to developing code in branches, leading to more time spent resolving divergent code. |
-| **Testing and Reviewing**      | Difficulty in testing and reviewing multiple dependent pull requests, with no integrated environment to validate changes together. |
-| **Superficial Reviews**        | Reviews can be shallow, focusing on minor issues (like naming or indentation) instead of deeper code quality concerns. |
-| **Slow Feedback**              | Delays in receiving feedback, which can slow down the development process.                       |
-| **Low-Quality Reviews**        | Reviews can become superficial with disproportionate feedback on small versus large code changes. |
-| **Discouraged Refactoring**    | Engineers may avoid refactoring to keep pull requests smaller, leading to lower code quality.     |
-
+| **Downside**                  | **What It Means**                                                                                      |
+|-------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Merge Issues**              | Code changes in different branches might conflict, causing delays when trying to combine them.         |
+| **Surface-Level Feedback**    | Reviews might focus on small things like naming or formatting, missing bigger problems in the code.    |
+| **Slow Responses**            | It can take time to get reviews, which can hold up progress.                                           |
+| **Avoiding Improvements**     | Developers might skip cleaning up or improving code to keep pull requests short and easier to review.   |
 
 # Best Practices
-
-## Pull Request Best Practices
-
-Here are some key things to keep in mind when creating pull requests:
 
 | **Best Practice** | **Description** | **In Practice** |
 | :---------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -103,7 +90,7 @@ Here are some key things to keep in mind when creating pull requests:
 | **Test Before You Submit** | Make sure your code works before submitting it.          | Run tests on your own computer first. Make sure automated checks pass.        |
 
  ### Conclusion
-Pull requests are a powerful tool that can significantly enhance the quality, efficiency, and collaboration of software development teams. By embracing PRs as a core part of their workflow, teams can deliver higher-quality software, faster.
+Pull requests help teams work better together by making it easier to review and improve code. When used regularly, they lead to better-quality software and faster development.
 
 ### Contact Information
 
