@@ -1,6 +1,8 @@
-# Employee API Documentation (Paraphrased)
+| Author          | Created on | Version   | Last updated by |  Internal Reviewer | L0  | L1  | L2  |
+|-----------------|------------|-----------|------------------|--------------------|-----|-----|-----|
+| Aditya Tripathi | 28-04-25   | version 1 | N/A              | Priyanshu        | Khushi | Rishabh | Piyush |
 
-## Outline of Contents
+## Table of Contents
 
 1.  [**Overview**](#overview)
 2.  [**Objective**](#objective)
@@ -12,8 +14,8 @@
     *   [1. ScyllaDB Details](#1-scylladb-details)
     *   [2. Redis Details](#2-redis-details)
 8.  [**Final Thoughts**](#final-thoughts)
-9.  [**How to Reach Us**](#how-to-reach-us)
-10. [**Helpful Links**](#helpful-links)
+9.  [**Contact Information**](#contact-information)
+10. [**Reference Links**](#reference-links)
 
 ## Overview
 
@@ -29,13 +31,13 @@ The Employee API functions as a Go-language microservice intended to oversee all
 
 ## Setup Requirements
 
-To begin using this API, please verify that the following are installed and configured on your machine:
+| Component     | Requirement                                                                                                           |
+|---------------|------------------------------------------------------------------------------------------------------------------------|
+| Go (Golang)   | Version 1.18 is required.                                                                                              |
+| ScyllaDB      | Access to a configured ScyllaDB instance with required keyspaces and tables. VM should have at least 20 GB RAM.       |
+| Redis (Optional) | Recommended for enabling caching, but not strictly required.                                                       |
 
-*   **Go (Golang)** - Version 1.18 is required.
-*   **ScyllaDB** - You must have access to a ScyllaDB instance configured with the necessary keyspaces and tables for employee information, along with a Virtual Machine RAM allocation of 20.
-*   **Redis (Optional)** - Although not essential, having an active Redis instance is advised for enabling caching capabilities.
-
-These required components need to be reachable via the network or exist within the same operational environment as the API itself.
+> All components must be network-accessible or exist within the same environment as the API.
 
 ## Capabilities
 
@@ -71,7 +73,7 @@ ScyllaDB serves as the principal persistent database for the Employee API. It is
 
 ScyllaDB stands out as a high-performance NoSQL database compatible with Apache Cassandra. It is fine-tuned for achieving lower latencies and greater throughput, rendering it ideal for applications that demand swift data access, especially at scale. Its distributed design enables it to handle vast amounts of data spread across numerous nodes, thereby ensuring scalability, high uptime, and data permanence. Moreover, ScyllaDB's inherently fault-tolerant structure incorporates replication and data partitioning, providing robustness against system failures and preserving data integrity even when nodes are unavailable. This database was chosen for the Employee API to establish a dependable and efficient storage foundation capable of managing substantial data loads as the collection of employee records expands.
 
-For comprehensive setup instructions, refer to the [ScyllaDB Documentation](https://github.com/avengers-p11/Documentation/blob/main/OT%20MS%20Understanding/ScyllaDB/Scylladb-documentation.md).
+For comprehensive setup instructions, refer to the [ScyllaDB Documentation](LINK).
 
 ### 2. Redis Details
 
@@ -81,17 +83,17 @@ Redis acts as an in-memory caching layer designed to boost performance by tempor
 
 Operating entirely within system memory, Redis allows for exceptionally fast data retrieval, making it perfectly suited for caching. It helps lessen the burden on the main database by minimizing the frequency of repeated queries to ScyllaDB. Redis supports adaptable caching methods, like the Least Recently Used (LRU) eviction policy, ensuring that the cached data remains relevant. While its use is optional, incorporating Redis notably enhances API response durations, thereby increasing operational efficiency through the caching of commonly accessed information.
 
-For comprehensive setup instructions, refer to the [Redis Documentation](https://github.com/avengers-p11/Documentation/blob/main/OT%20MS%20Understanding/Redis/Redis%20Documentation/README.md#rich-data-structures).
+For comprehensive setup instructions, refer to the [Redis Documentation](LINK).
 
 ## Final Thoughts
 
 The Employee API represents a solid microservice engineered to handle employee data as part of the OT Microservices architecture. It integrates effectively with the Attendance API and Salary API and depends on ScyllaDB for high-capacity data storage. By utilizing Redis for caching, Swagger for API documentation generation, and Prometheus for system monitoring, it maintains efficient functioning and scalability. This API is positioned to function as the central pillar for services concerning employees, offering ease of future expansion and maintenance.
 
-We invite contributions, bug reports, and general feedback to aid in refining the project's overall capabilities and user-friendliness. Should you encounter any issues or have suggestions for new features, please do not hesitate to create an issue or submit a pull request.
+## Contact Information
 
-## How to Reach Us
-
-*(Contact information corresponding to the original documentation would go here.)*
+| Name         | Email address          |
+|--------------|------------------------|
+| Aditya Tripathi          | aditya.tripathi.snaatak@mygurukulam.co     |
 
 ## Helpful Links
 
