@@ -228,21 +228,17 @@ Mention all the common issues that you encountered while performing setup of the
 *   **Do you offer an enterprise version of this application?**
     No, this is an open-source contribution. No enterprise version is available. *(Adjust if applicable)*
 
-*   **[Add another frequent question here?]**
-    [Provide the answer here.]
-
 ## Contact Information
 
 | Name | Email address       |
 | :--- | :------------------ |
 | abc  | abc@mygurukulam.co  |
-| *Add more contacts* | *Add email*         |
+| xyz  | xyz@mygurukulam.co  |
 
 ## References
 
 | Links                                                                       | Descriptions                                                      |
 | :-------------------------------------------------------------------------- | :---------------------------------------------------------------- |
-| [Jenkins Docs - Installing on Debian/Ubuntu](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu) | Document format followed from this link                         |
-| [Amplifi User Guide - FAQs](https://amplifi.com/user-guide/FAQs.html)       | Documentation referred for the table of contents to be included |
-| [The Content Authority - Intro vs Overview](https://thecontentauthority.com/blog/introduction-vs-overview) | This link explains the difference between Overview & Intro        |
-| *[Add another relevant link]*                                               | *[Description of the linked resource]*                            |
+| [CICD Docs - Installation on Ubuntu](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu) | ...                         |
+| [User Guide](https://amplifi.com/user-guide/FAQs.html)       | ...                                          |
+| [Intro and Overview](https://thecontentauthority.com/blog/introduction-vs-overview) | ...                    |
