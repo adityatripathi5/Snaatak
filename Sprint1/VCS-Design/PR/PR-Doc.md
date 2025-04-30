@@ -49,17 +49,11 @@ A Pull Request (PR) is a way to ask for your code changes to be added to a proje
 
 ### PR Rules
 
-When creating Pull Requests, please follow these rules to keep the process clear and efficient:
+When creating Pull Requests, please follow the below link for rules to keep the process clear and efficient:
 
-| **Rule**                        | **Explanation**                                                                                                   |
-|--------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Keep it Small**              | Focus on one task or feature per PR. Avoid large or overly complex pull requests.                                |
-| **Clear Title and Description**| Use a brief, meaningful title. In the description, explain what the change is and why it’s needed. Link issues (e.g., `Fixes #123`). |
-| **Self-Review First**          | Look over your own code before submitting to catch bugs, typos, or unnecessary debug code.                       |
-| **Ensure Tests Pass**          | Run all relevant tests locally and confirm they pass. CI checks must also pass before merging.                    |
-| **Request Appropriate Reviewers** | Tag the right team members or code owners who should review the changes.                                          |
-| **Respond to Feedback**        | Reply to reviewer comments, make necessary changes, and engage in respectful discussions if needed.              |
-| **Update Your Branch**         | Regularly sync with the main branch to avoid or minimize merge conflicts.                                        |
+| Link         | Description         |
+|--------------|------------------------|
+| [PR POC](LINK)          | POC  |
 
 ### Advantages
 
