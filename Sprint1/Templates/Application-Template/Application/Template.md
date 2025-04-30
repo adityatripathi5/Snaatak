@@ -21,7 +21,7 @@ Before diving into application deployment, ensure the following Hardware, Softwa
 | :-------------------- | :--------------------- |
 | Processor             | dual-core              |
 | RAM                   | 4GB                    |
-| Disk                  | 20GB                   |
+| Disk                  | 30GB                   |
 | OS                    | Ubuntu (22.04)         |
 
 ### Dependencies
@@ -42,23 +42,10 @@ Before diving into application deployment, ensure the following Hardware, Softwa
 
 ### Important Ports
 
-#### Inbound Traffic
-
 | Port | Description      |
 | :--- | :--------------- |
 | 9042 | Used by ScyllaDB |
-
-#### Outbound Traffic
-
-| Port | Description           |
-| :--- | :-------------------- |
 | 8080 | Used by Tomcat-server |
-
-### Others
-
-| Others                 | Description   |
-| :--------------------- | :------------ |
-| Additional requirement | Description   |
 
 ## Architecture
 
@@ -198,15 +185,13 @@ Ensuring high availability of the application is crucial to minimize downtime an
 
 ## Troubleshooting
 
-Mention all the common issues that you encountered while performing setup of the Application. If you think there are some specific errors that are seen, you can add their screenshots or give a brief explanation of issue and offer solution to resolve it or guide the user to troubleshoot easily.
+Below are common issues you might encounter while setting up the application, along with possible solutions or guidance.
 
-*   **Issue 1:** Brief description of the common issue.
-    *   **Error Message (if applicable):** `Paste relevant error message here`
-    *   **Screenshot (Optional):** `![Error Screenshot](path/to/screenshot.png)`
-    *   **Solution:** Steps to resolve the issue or guide troubleshooting.
-*   **Issue 2:** Another common issue description.
-    *   **Solution:** Steps to resolve this issue.
-*   *Add more common issues as needed*
+| **Issue**                          | **Error Message (if any)**          | **Screenshot (Optional)**                         | **Solution / Troubleshooting Steps**                                  |
+|------------------------------------|-------------------------------------|---------------------------------------------------|----------------------------------------------------------------------|
+| Issue 1: Brief description of the common issue | `Paste relevant error message here` | ![Error Screenshot](path/to/screenshot.png)       | Steps to resolve the issue or helpful tips for debugging.           |
+| Issue 2: Another common issue description     | –                                   | –                                                 |  –      |
+| *Add more issues as needed*       | –                                   | –                                                 | –                                                                    |
 
 ## FAQs
 
