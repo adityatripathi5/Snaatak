@@ -55,7 +55,7 @@ The Employee API functions as a Go-language microservice intended to oversee all
 | **ScyllaDB**        | A distributed NoSQL database known for high availability and compatibility with Cassandra, optimized for applications demanding low latency and high throughput. |
 | **Redis**           | An in-memory data repository employed for caching data that is accessed often, thereby minimizing database interactions and accelerating API response delivery. |
 | **Swagger**         | A tool that automatically creates API documentation that is both accessible and interactive through a web-based interface. |
-| **Make Command**    | A build automation utility used to execute repetitive development tasks (such as compiling the application or applying migrations) defined within a Makefile. |
+| **Make**    | A build automation utility used to execute repetitive development tasks (such as compiling the application or applying migrations) defined within a Makefile. |
 | **Migrate**         | A database migration management tool that guarantees the database schema remains consistent with the application's structural needs. |
 | **JQ**              | A command-line utility for processing JSON, useful for parsing and manipulating JSON formatted data.             |
 
