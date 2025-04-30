@@ -24,7 +24,7 @@ This repository contains the documentation for **Monorepo** strategy for version
 
 ## Introduction
 
-A Monorepo ("mono" meaning single, "repo" meaning repository) is a version control strategy where source code for many distinct projects or components is stored in the same repository. This contrasts with the Multi-repo (often associated with microservices) approach where each project/service/component has its own dedicated repository. This POC evaluates the Monorepo strategy's suitability for our specific context.
+A Monorepo ("mono" meaning single, "repo" meaning repository) is a version control strategy where source code for many distinct projects or components is stored in the same repository. This contrasts with the Multi-repo (often associated with microservices) approach where each project/service/component has its own dedicated repository. This documnent evaluates the Monorepo strategy's suitability for our specific context.
 
 ![image](https://github.com/user-attachments/assets/248febb5-e100-4c83-a2f0-11348a32142a)
 
