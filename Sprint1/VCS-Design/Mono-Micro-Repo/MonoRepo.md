@@ -10,7 +10,7 @@ This repository contains the documentation for **Monorepo** strategy for version
 ## Table of Contents
 
 *   [Introduction](#introduction)
-*   [Why This POC?](#why-this-poc)
+*   [Why](#why)
 *   [Monorepo Key Features](#monorepo-key-features)
 *   [Advantages of Monorepo](#advantages-of-monorepo)
 *   [Challenges / Disadvantages of Monorepo](#challenges--disadvantages-of-monorepo)
@@ -29,7 +29,7 @@ A Monorepo ("mono" meaning single, "repo" meaning repository) is a version contr
 ![image](https://github.com/user-attachments/assets/248febb5-e100-4c83-a2f0-11348a32142a)
 
 
-## Why This POC?
+## Why
 
 | Evaluation Focus                                 | Description                                                                                   |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------|
