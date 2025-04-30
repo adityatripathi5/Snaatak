@@ -173,12 +173,12 @@ This section offers details on various types of logs related to the application,
 | :--------------------------------- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 | **Event Logs**                     | `location/to/event.log`    | An event log is a high-level log recording network traffic and usage data like incorrect password attempts, login attempts, app events. |
 | **Authentication & Access Logs** | `location/to/access.log`   | Contains a list of persons or bots who have accessed specific programs or files.                                                     |
-| **Server Logs**                    | `location/to/server.log`   | A text document tracking actions on a specific server over time.                                                                   |
-| **System Logs**                    | `/var/log/syslog`          | General system messages and events. *(Example path)*                                                                              |
-| **Change Logs**                    | `location/to/change.log`   | Records configuration changes or modifications made to the application/system. *(Example path)*                                   |
-| **Availability Logs**              | `location/to/uptime.log`   | Tracks application uptime and downtime events. *(Example path)*                                                                    |
-| **Resource Logs**                  | `location/to/resource.log` | Monitors resource usage (CPU, memory, disk) over time. *(Example path)*                                                            |
-| **Threat Logs**                    | `location/to/threat.log`   | Contains information on traffic matching firewall security profiles or detected security threats.                                    |
+| **Server Logs**                    | ...   | ...                                                                |
+| **System Logs**                    | ...         | ...                                                                           |
+| **Change Logs**                    | ...  | ...                                   |
+| **Availability Logs**              | ...   | ...                                                                   |
+| **Resource Logs**                  | ... | ...                                                            |
+| **Threat Logs**                    | ...   |  ...                                    |
 
 ## Disaster Recovery (DR)
 
