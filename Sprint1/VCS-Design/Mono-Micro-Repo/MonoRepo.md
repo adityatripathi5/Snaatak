@@ -28,36 +28,41 @@ This repository contains the documentation for **Monorepo** strategy for version
 
 ## Why
 
-| Evaluation Focus                                 | Description                                                                                   |
-|--------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Developer Experience (DX)                        | Improve ease of development, onboarding, and day-to-day workflows.                            |
-| Code Sharing and Reuse                           | Promote reuse of components/libraries across projects.                                        |
-| Dependency Management Consistency                | Ensure consistency in how dependencies are managed across teams and services.                 |
-| Build and Deployment Pipeline Efficiency         | Streamline and standardize CI/CD processes.                                                   |
-| Cross-team Collaboration and Visibility          | Increase code discoverability and enable better collaboration between teams.                  |
+A monorepo helps teams manage multiple projects in a single codebase, improving collaboration, consistency, and code reuse.
+
+| **What We're Improving**              | **Why It Matters**                                                                 |
+|--------------------------------------|-------------------------------------------------------------------------------------|
+|  Developer Experience             | Easier for developers to get started, work across projects, and follow standard workflows. |
+|  Code Sharing                      | Makes it simple to share and reuse code (like libraries or modules) across different projects. |
+|  Consistent Dependency Management  | All teams manage dependencies in the same way, reducing errors and version conflicts. |
+|  Faster CI/CD                      | CI/CD pipelines can be standardized and optimized across all services in the repo. |
+|  Team Collaboration                | Developers can see and contribute to each other's work more easily, improving teamwork. |
 
 ## Monorepo Key Features
 
-| Feature                            | Description                                                                                   |
-|------------------------------------|-----------------------------------------------------------------------------------------------|
-| Single Source of Truth             | All code resides in one repository, simplifying navigation and discovery.                     |
-| Atomic Commits                     | Enables cross-project changes to be committed together as a single unit.                      |
-| Simplified Dependency Management   | Easier handling of internal dependencies using workspace tools or direct linking.             |
-| Unified Tooling                    | Consistent linting, testing, building, and deployment processes across all projects.          |
-| Code Visibility & Discovery        | Developers can search and browse all projects easily within a centralized repo.               |
-| Large-Scale Refactoring            | Facilitates updating shared code and applying changes across all consumers in one go.         |
+A monorepo setup brings helpful features that improve how teams work with multiple projects in a single place:
+
+| **Feature**                    | **Description**                                                                 |
+|-------------------------------|----------------------------------------------------------------------------------|
+| Single Source of Truth      | All code lives in one repository, making it easier to find, search, and navigate. |
+| Atomic Commits & Refactoring | Make changes across multiple projects in one commit and apply updates system-wide. |
+| Simplified Dependency Management | Easier to handle internal dependencies using tools like workspaces or linking. |
+| Unified Tooling            | Use consistent tools for linting, testing, building, and deploying.              |
+| Code Visibility             | Developers can explore all projects easily within a centralized codebase.        |
 
 ## Advantages of Monorepo
 
-| Advantage                  | Description                                                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------|
-| Simplified Code Sharing   | Reduced friction in sharing code between projects and teams.                                |
-| Improved Collaboration    | Easier for developers to contribute to different parts of the system.                       |
-| Consistency               | Easier enforcement of code standards, linting rules, and unified build processes.           |
-| Atomic Refactoring        | Ability to update APIs and their consumers in a single, system-wide change.                 |
+Using a monorepo offers strong benefits for teams working on multiple services or apps:
 
+| **Advantage**                | **Description**                                                                 |
+|-----------------------------|----------------------------------------------------------------------------------|
+| Easy Code Sharing         | Reduces friction when sharing and reusing code between projects and teams.       |
+| Better Collaboration      | Developers can contribute across projects more easily and spot opportunities to help. |
+| Process Consistency       | Simplifies enforcement of shared standards and workflows across teams.          |
 
 ## Challenges / Disadvantages of Monorepo
+
+While monorepos offer many benefits, they also introduce challenges that teams need to carefully manage as the codebase grows.
 
 | Challenge                  | Description                                                                                          |
 |---------------------------|------------------------------------------------------------------------------------------------------|
