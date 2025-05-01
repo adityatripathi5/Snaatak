@@ -73,6 +73,9 @@ While monorepos offer many benefits, they also introduce challenges that teams n
 
 ## Typical Monorepo Workflow
 
+![image](https://github.com/user-attachments/assets/6c5f9d46-0348-447e-81cd-63d75c1c4559)
+
+
 | Step         | Action                                                                                             |
 |--------------|----------------------------------------------------------------------------------------------------|
 | 1. Clone     | Developers clone the single repository.                                                            |
