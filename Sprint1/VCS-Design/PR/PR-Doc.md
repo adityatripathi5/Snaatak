@@ -6,29 +6,27 @@
 
 ## Table of Content
 1. [Introduction](#introduction)
-2. [Feature](#features)
+2. [What is PR](what-is-pr)
 3. [Why Pull Request](#why-pull-request)
-4. [Steps to Create a Pull Request](#steps-to-create-a-pull-request)
-5. [PR Rules](#pr-rules)
-6. [Advantages](#advantages)
-7. [Disadvantages](#disadvantages)
-8. [Best Practices](#best-practices)
-9. [Conclusion](#conclusion)
-10. [Contact Information](#contact-information)
-11. [References](#references)
+4. [Feature](#features)
+5. [Steps to Create a Pull Request](#steps-to-create-a-pull-request)
+6. [PR Rules](#pr-rules)
+7. [Advantages](#advantages)
+8. [Disadvantages](#disadvantages)
+9. [Best Practices](#best-practices)
+10. [Conclusion](#conclusion)
+11. [Contact Information](#contact-information)
+12. [References](#references)
 
 ### Introduction
 
+This documentation provides a clear and simple guide to understanding, creating, and managing Pull Requests (PR) in a collaborative development workflow. 
+
+### What is PR
+
 A Pull Request (PR) is a way to ask for your code changes to be added to a project. It lets others on the team review your work, give feedback, and approve it before it becomes part of the main code. This helps teams work together and keep the project high quality.
 
-### Features
-
-| Feature                  | Description                                                                                      |
-|--------------------------|--------------------------------------------------------------------------------------------------|
-| **Code Review**           | Team members check the code changes before adding them to the project.                           |
-| **Discussion & Feedback** | Developers talk about the changes and give suggestions.                                          |
-| **Continuous Integration**| Automatically test the changes to make sure they don’t break anything in the project.            |
-| **Merge Control**         | Maintainers decide when and how to add the changes to the main project.                          ||
+![image](https://github.com/user-attachments/assets/942a1139-5b81-44f6-aff5-ba5727b490e1)
 
 ### Why Pull Request
 
@@ -40,12 +38,20 @@ A Pull Request (PR) is a way to ask for your code changes to be added to a proje
 | **Feedback Loop**    | Lets others give feedback to improve the code.                                               |
 | **Version Control**  | Helps control when changes are added to the main project.                                    |
 
+### Features
+
+| Feature                  | Description                                                                                      |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| **Code Review**           | Team members check the code changes before adding them to the project.                           |
+| **Discussion & Feedback** | Developers talk about the changes and give suggestions.                                          |
+| **Continuous Integration**| Automatically test the changes to make sure they don’t break anything in the project.            |
+| **Merge Control**         | Maintainers decide when and how to add the changes to the main project.                          ||
 
 ### Steps to Create a Pull Request
 **Please refer to the reference link for the installation and flowchart**
 | Link         | Description         |
 |--------------|------------------------|
-| [PR POC](LINK)          | POC  |
+| [PR POC](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Tharik_SCRUM-87/vcs_design/pr/pr_poc.md)          | POC  |
 
 ### PR Rules
 
@@ -53,7 +59,7 @@ When creating Pull Requests, please follow the below link for rules to keep the 
 
 | Link         | Description         |
 |--------------|------------------------|
-| [PR POC](LINK)          | POC  |
+| [PR Rules](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Tharik_SCRUM-87/vcs_design/pr/pr_poc.md)          | POC  |
 
 ### Advantages
 
