@@ -91,7 +91,7 @@ sudo wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/d
 ### 3. Install ScyllaDB packages.
 
 ```bash
-sudo apt-get update`
+sudo apt-get update
 sudo apt-get install -y scylla
 ```
 
