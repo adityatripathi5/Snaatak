@@ -4,18 +4,22 @@
 
 ## Table of Contents
 
-1.  [**Introduction**](#introduction)
-2.  [**Objective**](#objective)
-3.  [**Architecture**](#architecture)
-4.  [**Setup Requirements**](#setup-requirements)
-5.  [**Capabilities**](#capabilities)
-6.  [**Dependencies**](#dependencies)
-7.  [**Data Storage & Caching Mechanisms**](#data-storage--caching-mechanisms)
-    *   [1. ScyllaDB Details](#1-scylladb-details)
-    *   [2. Redis Details](#2-redis-details)
-8.  [**Final Thoughts**](#final-thoughts)
-9.  [**Contact Information**](#contact-information)
-10. [**Reference Links**](#reference-links)
+1. [**Introduction**](#introduction)  
+2. [**Objective**](#objective)  
+3. [**Architecture**](#architecture)  
+4. [**System Requirements**](#system-requirements)  
+5. [**Setup Requirements**](#setup-requirements)  
+6. [**Required Ports**](#required-ports)  
+7. [**Capabilities**](#capabilities)  
+8. [**Dependencies**](#dependencies)  
+9. [**Installation Guide for employee-api**](#installation-guide-for-employee-api)  
+10. [**Data Storage & Caching Mechanisms**](#data-storage--caching-mechanisms)  
+    - [1. ScyllaDB Details](#1-scylladb-details)  
+    - [2. Redis Details](#2-redis-details)  
+11. [**Final Thoughts**](#final-thoughts)  
+12. [**Endpoints Information**](#endpoints-information)  
+13. [**Contact Information**](#contact-information)  
+14. [**Reference Links**](#reference-links)
 
 ## Introduction
 
@@ -29,6 +33,15 @@ The Employee API functions as a Go-language microservice intended to oversee all
 
 ![Architectural Diagram](https://github.com/user-attachments/assets/50d18e52-0e94-48d3-9db7-28ba439e819f)
 
+## System Requirements
+
+| Hardware Specifications |  Recommendation      |
+| :-------------------- | :--------------------- |
+| Processor             | dual-core              |
+| RAM                   | 4GB                    |
+| Disk                  | 30GB                   |
+| OS                    | Ubuntu (22.04)         |
+
 ## Setup Requirements
 
 | Component     | Requirement                                                                                                           |
@@ -36,6 +49,16 @@ The Employee API functions as a Go-language microservice intended to oversee all
 | Go (Golang)   | Version 1.18 is required.                                                                                              |
 | ScyllaDB      | Access to a configured ScyllaDB instance with required keyspaces and tables. VM should have at least 20 GB RAM.       |
 | Redis (Optional) | Recommended for enabling caching, but not strictly required.                                                       |
+
+## Required Ports
+
+Below are the essential ports used by the Employee REST API microservice:
+
+| **Port** | **Service**     | **Description**                                                                 |
+|----------|------------------|---------------------------------------------------------------------------------|
+| `8080`   | Employee API     | Main API server and Swagger UI accessible at `/swagger/index.html`            |
+| `9042`   | ScyllaDB         | Default port for CQL connections used by the database                          |
+| `6379`   | Redis (optional) | Default port for Redis used as a caching layer                                 |
 
 ## Capabilities
 
@@ -59,6 +82,10 @@ The Employee API functions as a Go-language microservice intended to oversee all
 | **Migrate**         | A database migration management tool that guarantees the database schema remains consistent with the application's structural needs. |
 | **JQ**              | A command-line utility for processing JSON, useful for parsing and manipulating JSON formatted data.             |
 
+## Installation Guide for employee-api
+
+You can follow the [employee api poc](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Tharik_SCRUM-83/ot_ms_understanding/application/employee/setup.md) to install the install and start the api.
+
 ## Data Storage & Caching Mechanisms
 
 This microservice makes use of ScyllaDB and Redis to manage data storage and retrieval effectively. Each component fulfills a specific function within the application:
@@ -69,7 +96,7 @@ ScyllaDB serves as the principal persistent database for the Employee API. It is
 
 #### Rationale for ScyllaDB
 
-ScyllaDB stands out as a high-performance NoSQL database compatible with Apache Cassandra. It is fine-tuned for achieving lower latencies and greater throughput, rendering it ideal for applications that demand swift data access, especially at scale. Its distributed design enables it to handle vast amounts of data spread across numerous nodes, thereby ensuring scalability, high uptime, and data permanence. Moreover, ScyllaDB's inherently fault-tolerant structure incorporates replication and data partitioning, providing robustness against system failures and preserving data integrity even when nodes are unavailable. This database was chosen for the Employee API to establish a dependable and efficient storage foundation capable of managing substantial data loads as the collection of employee records expands.
+ScyllaDB is a fast, NoSQL database compatible with Cassandra, designed for low latency and high throughput. Its distributed and fault-tolerant architecture ensures scalability and data reliability. It’s used in the Employee API to efficiently manage growing employee records.
 
 For comprehensive setup instructions, refer to the [ScyllaDB Documentation](LINK).
 
@@ -79,13 +106,27 @@ Redis acts as an in-memory caching layer designed to boost performance by tempor
 
 #### Rationale for Redis
 
-Operating entirely within system memory, Redis allows for exceptionally fast data retrieval, making it perfectly suited for caching. It helps lessen the burden on the main database by minimizing the frequency of repeated queries to ScyllaDB. Redis supports adaptable caching methods, like the Least Recently Used (LRU) eviction policy, ensuring that the cached data remains relevant. While its use is optional, incorporating Redis notably enhances API response durations, thereby increasing operational efficiency through the caching of commonly accessed information.
+Redis is an in-memory data store that enables extremely fast data retrieval, making it ideal for caching. It reduces load on ScyllaDB by minimizing repeated queries. Though optional, using Redis improves API speed and overall efficiency.
 
 For comprehensive setup instructions, refer to the [Redis Documentation](LINK).
 
 ## Final Thoughts
 
 This Employee API demonstrates a thoughtful balance between performance, scalability, and maintainability within a microservices environment. Its integration of ScyllaDB and optional Redis caching ensures responsiveness under load, while modular design enables easy collaboration and growth. Well-documented and production-ready, it sets a strong precedent for future APIs in the OT Microservices suite.
+
+## Endpoints Information
+
+| **Endpoint**                        | **Method** | **Description**                                                                                   |
+|-------------------------------------|------------|---------------------------------------------------------------------------------------------------|
+| /metrics                            | GET        | Application healthcheck and performance metrics are available on this endpoint                    |
+| /api/v1/employee/health             | GET        | Endpoint for providing shallow healthcheck information about application health and readiness     |
+| /api/v1/employee/health/detail      | GET        | Endpoint for providing detailed health check about dependencies as well like - ScyllaDB and Redis |
+| /api/v1/employee/create             | POST       | Data creation endpoint which accepts certain JSON body to add employee information in database    |
+| /api/v1/employee/search             | GET        | Endpoint for searching data information using the params in the URL                               |
+| /api/v1/employee/search/all         | GET        | Endpoint for searching all information across the system                                          |
+| /api/v1/employee/search/location    | GET        | Application endpoint for getting the count and information of location                            |
+| /api/v1/employee/search/designation | GET        | Application endpoint for getting the count and information of designation                         |
+| /swagger/index.html                 | GET        | Swagger endpoint for the application API documentation and their data models                      |
 
 ## Contact Information
 
