@@ -42,21 +42,20 @@ Before diving into the Installation of scyllaDB, let’s ensure the following pr
 curl -sSf https://get.scylladb.com/server | sudo bash
 sudo scylla_io_setup
 ```
-![Screenshot 2024-11-18 161722](https://github.com/user-attachments/assets/3be1e5c9-76dc-42a1-85ba-27e17721ed84)
-
+![Screenshot 2025-05-01 101338](https://github.com/user-attachments/assets/2c46ffe2-f5f0-47e0-98a2-7754d3a46971)
 
 ## 2. Start the ScyllaDB server and check its status:
 ```
 sudo systemctl start scylla-server
 sudo systemctl status scylla-server
 ```
-![Screenshot 2024-11-18 161831](https://github.com/user-attachments/assets/9c6a0d24-22a6-44d9-ae19-79b1757f9dd7)
+![Screenshot 2025-05-01 101414](https://github.com/user-attachments/assets/b1f49946-6324-4e72-9577-8f6133baee31)
 
 ## 3. Access ScyllaDB using cqlsh:
 ```
 cqlsh
 ```
-![Screenshot 2024-11-18 161912](https://github.com/user-attachments/assets/3654db11-4887-4fce-895b-45d8211ac164)
+![Screenshot 2025-05-01 111345](https://github.com/user-attachments/assets/cff503de-aab4-4d94-ae1e-1e087a40e738)
 
 # Method 2. Manual installation method using APT repository for setting up ScyllaDB on Ubuntu
 
