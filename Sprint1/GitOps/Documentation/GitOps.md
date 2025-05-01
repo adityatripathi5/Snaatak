@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/e99efe2f-5f96-49ea-8a4b-601322096425)
+
 | Author          | Created on | Version   | Last updated by |  Internal Reviewer | L0  | L1  | L2  |
 |-----------------|------------|-----------|------------------|--------------------|-----|-----|-----|
 | Aditya Tripathi | 28-04-25   | version 1 | N/A              | Priyanshu        | Khushi | Rishabh | Piyush |
