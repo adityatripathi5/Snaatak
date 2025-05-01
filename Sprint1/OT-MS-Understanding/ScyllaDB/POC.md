@@ -1,3 +1,9 @@
+![image](https://github.com/user-attachments/assets/aa906a09-a286-4976-8907-ca2720b8d3b3)
+
+| Author          | Created on | Version   | Last updated by |  Internal Reviewer | L0  | L1  | L2  |
+|-----------------|------------|-----------|------------------|--------------------|-----|-----|-----|
+| Aditya Tripathi | 28-04-25   | version 1 | N/A              | Priyanshu        | Khushi | Rishabh | Piyush |
+
 ## Table Of Content
 
 1. [Introduction](#introduction)  
@@ -5,7 +11,7 @@
 3. [Software Overview](#software-overview)  
 4. [System Requirements](#system-requirements)  
 5. [ScyllaDB Installation and Configuration](#scylladb-installation-and-configuration)  
-   - [Method 1: Installation of ScyllaDB with script](#method-1-installation-of-scyllaDB-with-script)  
+   - [Method 1: Installation of ScyllaDB with script](#method-1-installation-of-scylladb-with-script)  
    - [Method 2: Manual Installation using APT](#method-2-manual-installation-method-using-apt-repository-for-setting-up-scylladb-on-ubuntu)   
 6. [Conclusion](#conclusion)  
 7. [Contacts](#contacts)  
@@ -37,7 +43,7 @@ Before diving into the Installation of scyllaDB, let’s ensure the following pr
 # Scylladb Installation and configuration
 ### Two Methods to Install ScyllaDB on a Linux Machine
 
-# Method1. Installation of ScyllaDB with script.
+# Method 1. Installation of ScyllaDB with script
 
 ![_- visual selection (1)](https://github.com/user-attachments/assets/3823f0a2-8aca-49df-b84d-502454c421e7)
 
