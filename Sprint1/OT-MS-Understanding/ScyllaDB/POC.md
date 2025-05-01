@@ -6,20 +6,26 @@
 
 ## Table Of Content
 
-1. [Introduction](#introduction)  
-2. [Pre-requisites](#pre-requisites)  
-3. [Software Overview](#software-overview)  
-4. [System Requirements](#system-requirements)  
-5. [ScyllaDB Installation and Configuration](#scylladb-installation-and-configuration)  
+1. [Introduction](#introduction)
+2. [What is ScyllaDB](#what-is-scylladb)  
+3. [Pre-requisites](#pre-requisites)  
+4. [Software Overview](#software-overview)  
+5. [System Requirements](#system-requirements) 
+6. [Important Ports](#important-ports)
+7. [ScyllaDB Installation and Configuration](#scylladb-installation-and-configuration)  
    - [Method 1: Installation of ScyllaDB with script](#method-1-installation-of-scylladb-with-script)  
    - [Method 2: Manual Installation using APT](#method-2-manual-installation-method-using-apt-repository-for-setting-up-scylladb-on-ubuntu)   
-6. [Conclusion](#conclusion)  
-7. [Contacts](#contacts)  
-8. [References](#references)
+8. [Conclusion](#conclusion)  
+9. [Contacts](#contacts)  
+10. [References](#references)
 
 
 ## Introduction
 This guide explains how to set up ScyllaDB on a local machine. ScyllaDB is a fast NoSQL database that works with Cassandra tools and supports easy integration. In this project, it's used in the Employee API to handle employee data efficiently.
+
+## What is ScyllaDB
+
+ScyllaDB stands out as a high-performance NoSQL database compatible with Apache Cassandra. It is fine-tuned for achieving lower latencies and greater throughput, rendering it ideal for applications that demand swift data access, especially at scale. To read more about ScyllaDB you can follow the [ScyllaDB Guide](https://github.com/Cloud-NInja-snaatak/Documentation/blob/aniruddh_SCRUM-111/ot_ms_understanding/software/database/scylladb/documentation.md)
 
 ## Pre-requisites
 
@@ -38,43 +44,48 @@ Before diving into the Installation of scyllaDB, let’s ensure the following pr
 | Vm type | t2 medium |
 | Disk space | 30 GB |
 
+## Important Ports
 
+| Port | Description      |
+| :--- | :--------------- |
+| 9042 | Used by ScyllaDB |
 
-# Scylladb Installation and configuration
-### Two Methods to Install ScyllaDB on a Linux Machine
+## Scylladb Installation and configuration
 
-# Method 1. Installation of ScyllaDB with script
+Two Methods to Install ScyllaDB on a Linux Machine
+
+## Method 1. Installation of ScyllaDB with script
 
 ![_- visual selection (1)](https://github.com/user-attachments/assets/3823f0a2-8aca-49df-b84d-502454c421e7)
 
 
-### The quickest way to install ScyllaDB is by using the provided script.
+The quickest way to install ScyllaDB is by using the provided script.
 
-## 1. Run the installation script:
+### 1. Run the installation script:
 ```
 curl -sSf https://get.scylladb.com/server | sudo bash
 sudo scylla_io_setup
 ```
 ![Screenshot 2025-05-01 101338](https://github.com/user-attachments/assets/2c46ffe2-f5f0-47e0-98a2-7754d3a46971)
 
-## 2. Start the ScyllaDB server and check its status:
+### 2. Start the ScyllaDB server and check its status:
 ```
 sudo systemctl start scylla-server
 sudo systemctl status scylla-server
 ```
 ![Screenshot 2025-05-01 101414](https://github.com/user-attachments/assets/b1f49946-6324-4e72-9577-8f6133baee31)
 
-## 3. Access ScyllaDB using cqlsh:
+### 3. Access ScyllaDB using cqlsh:
 ```
 cqlsh
 ```
 ![Screenshot 2025-05-01 111345](https://github.com/user-attachments/assets/cff503de-aab4-4d94-ae1e-1e087a40e738)
 
-# Method 2. Manual installation method using APT repository for setting up ScyllaDB on Ubuntu
+## Method 2. Manual installation method using APT repository for setting up ScyllaDB on Ubuntu
 
 ![_- visual selection](https://github.com/user-attachments/assets/57363f9c-dcae-482e-984b-e66bf2b7d242)
 
-## 1. Install a repo file and add the ScyllaDB APT repository to your system:
+### 1. Install a repo file and add the ScyllaDB APT repository to your system:
 
 ```bash
 sudo mkdir -p /etc/apt/keyrings
@@ -82,7 +93,7 @@ sudo mkdir -p /etc/apt/keyrings
 sudo gpg --homedir /tmp --no-default-keyring --keyring /etc/apt/keyrings/scylladb.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A43E06657BAC99E3
 ```
 
-## 2. Add ScyllaDB repository:
+### 2. Add ScyllaDB repository:
   
 ```bash
 sudo wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/debian/scylla-6.2.list
@@ -95,7 +106,7 @@ sudo apt-get update
 sudo apt-get install -y scylla
 ```
 
-## **Start ScyllaDB**:
+### **Start ScyllaDB**:
 
 ### 1. Check if ScyllaDB is running:
 
