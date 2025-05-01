@@ -73,7 +73,7 @@ While monorepos offer many benefits, they also introduce challenges that teams n
 
 ## Typical Monorepo Workflow
 
-![image](https://github.com/user-attachments/assets/6c5f9d46-0348-447e-81cd-63d75c1c4559)
+![image](https://github.com/user-attachments/assets/afc4f2ac-a9ee-42be-b1db-b3837c1a6b95)
 
 
 | Step         | Action                                                                                             |
