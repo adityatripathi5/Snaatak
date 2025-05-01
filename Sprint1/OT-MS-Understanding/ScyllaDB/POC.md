@@ -1,11 +1,15 @@
 ## Table Of Content
 
-- [Introduction](#introduction)
-- [Pre-requisites](#pre-requisites)
-- [System Requirements](#system-requirements)
-- [Scylladb Installation and configuration](#scylladb-installation-and-configuration)
-- [Contacts](#contacts)
-- [References](#references)
+1. [Introduction](#introduction)  
+2. [Pre-requisites](#pre-requisites)  
+3. [Software Overview](#software-overview)  
+4. [System Requirements](#system-requirements)  
+5. [ScyllaDB Installation and Configuration](#scylladb-installation-and-configuration)  
+   - [Method 1: Quick Script Installation](#installation-of-scylladb-with-basic-method)  
+   - [Method 2: Manual Installation using APT](#method-2-manual-installation-method-using-apt-repository-for-setting-up-scylladb-on-ubuntu)   
+6. [Conclusion](#conclusion)  
+7. [Contacts](#contacts)  
+8. [References](#references)
 
 
 ## Introduction
@@ -73,13 +77,10 @@ sudo gpg --homedir /tmp --no-default-keyring --keyring /etc/apt/keyrings/scyllad
 sudo wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/debian/scylla-6.2.list
 ```
 
-![Screenshot 2024-11-12 141116](https://github.com/user-attachments/assets/ab1d7faf-e3ef-41e9-8d84-9a830bd85777)
-
 ### 3. Install ScyllaDB packages.
 
 ```bash
 sudo apt-get update`
-
 sudo apt-get install -y scylla
 ```
 
@@ -99,12 +100,8 @@ sudo vi /etc/scylla/scylla.yaml
 
 ### 3. Update configuration file of scylla
 ```bash
- Add these configurations:
-
+Add these configurations:
 rpc_address <private-ip>`
-  
-authenticator: PasswordAuthenticator
-authorizer: CassandraAuthorizer
 ```
 
 ### 4. Configure I/O settings for ScyllaDB on your VM
@@ -112,10 +109,6 @@ authorizer: CassandraAuthorizer
 ```bash
 sudo /opt/scylladb/scripts/scylla_io_setup
 ```
-
-![Screenshot 2024-11-12 175205](https://github.com/user-attachments/assets/c6e9883b-1e08-4159-a7b5-a486db9fe076)
-
-
 
 ### 5. Restart ScyllaDB
 
@@ -128,15 +121,25 @@ sudo systemctl start scylla-server
 ```bash
 sudo systemctl status scylla-server
 ```
+![Screenshot 2025-05-01 101414](https://github.com/user-attachments/assets/36c37e1b-35a6-4c81-916e-6f8ee7b91294)
 
-![Screenshot 2024-11-12 142659](https://github.com/user-attachments/assets/11a54d9e-9783-466f-831f-260cdc9e0e3f)
+
+### 7. Access ScyllaDB and make a table:
+
+```bash
+cqlsh 10.0.26.146 9042 -u scylladb -p password
+
+CREATE KEYSPACE IF NOT EXISTS employee_db 
+WITH replication = {
+  'class': 'SimpleStrategy', 
+  'replication_factor': 1
+};
+```
+
+![Screenshot 2025-05-01 105727](https://github.com/user-attachments/assets/a8a681b4-9703-43ee-8003-b5605b21c13b)
 
 ## Conclusion
-
-
-ScyllaDB is a fast, scalable NoSQL database designed for low-latency operations and efficient resource use, making it ideal for microservices like the Employee API. Its distributed design ensures high availability, fault tolerance, and seamless integration with Cassandra tools. In the Employee API, ScyllaDB efficiently handles large datasets, providing fast queries, scalability, and reliability for managing employee data.
-
-
+ScyllaDB is a high-performance NoSQL database built for speed and low-latency access. It works well with tools made for Cassandra and is designed for scalability and fault tolerance. In the Employee API, ScyllaDB helps store and query employee data quickly and reliably, even as the data grows.
 
 ## Contacts
 
@@ -149,6 +152,5 @@ ScyllaDB is a fast, scalable NoSQL database designed for low-latency operations 
 
 | Source                                                                                     | Description                                |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------ |
-| [ScyllaDB Installation Guide](https://opensource.docs.scylladb.com/stable/getting-started/install-scylla/index.html) | Comprehensive guide for installing ScyllaDB on Linux. |
-| [Dcumentation of ScyllaDB](https://github.com/avengers-p11/Documentation/blob/main/OT%20MS%20Understanding/ScyllaDB/ScyllaDB%20Documentation/README.md) | Information about scyllaDB . |
-| [Application Template ](https://github.com/OT-MICROSERVICES/documentation-template/wiki/Application-Template) | Document format followed from this link   |
+| [ScyllaDB Installation Guide](https://opensource.docs.scylladb.com/stable/getting-started/install-scylla/index.html) | Step by Step installation guide ScyllaDB. |
+| [Dcumentation of ScyllaDB](https://github.com/avengers-p11/Documentation/blob/main/OT%20MS%20Understanding/ScyllaDB/ScyllaDB%20Documentation/README.md) | What is scyllaDB a detailed documentation. |
