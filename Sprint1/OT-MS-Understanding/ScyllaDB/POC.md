@@ -13,7 +13,7 @@
 
 
 ## Introduction
-This documentation provides a simple guide to setting up ScyllaDB locally. ScyllaDB is a high-performance, distributed NoSQL database compatible with Apache Cassandra, making it easy to integrate and migrate. In our project, ScyllaDB is used in the Employee API microservice to efficiently manage distributed data.
+This guide explains how to set up ScyllaDB on a local machine. ScyllaDB is a fast NoSQL database that works with Cassandra tools and supports easy integration. In this project, it's used in the Employee API to handle employee data efficiently.
 
 ## Pre-requisites
 
@@ -30,7 +30,7 @@ Before diving into the Installation of scyllaDB, let’s ensure the following pr
 |---------|---------|
 | OS |  Ubuntu 22.4 |
 | Vm type | t2 medium |
-| Disk space | 20 GB |
+| Disk space | 30 GB |
 
 
 
