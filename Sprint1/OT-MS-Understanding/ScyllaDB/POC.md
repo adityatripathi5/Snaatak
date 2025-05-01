@@ -5,7 +5,7 @@
 3. [Software Overview](#software-overview)  
 4. [System Requirements](#system-requirements)  
 5. [ScyllaDB Installation and Configuration](#scylladb-installation-and-configuration)  
-   - [Method 1: Quick Script Installation](#installation-of-scylladb-with-basic-method)  
+   - [Method 1: Installation of ScyllaDB with script](#method-1-installation-of-scyllaDB-with-script)  
    - [Method 2: Manual Installation using APT](#method-2-manual-installation-method-using-apt-repository-for-setting-up-scylladb-on-ubuntu)   
 6. [Conclusion](#conclusion)  
 7. [Contacts](#contacts)  
@@ -36,9 +36,12 @@ Before diving into the Installation of scyllaDB, let’s ensure the following pr
 
 # Scylladb Installation and configuration
 ### Two Methods to Install ScyllaDB on a Linux Machine
-![Screenshot 2024-11-18 170054](https://github.com/user-attachments/assets/25da80d4-4f36-41c4-bc0a-0a8374e91ff3)
 
-# Installation of ScyllaDB with basic Method
+# Method1. Installation of ScyllaDB with script.
+
+![_- visual selection (1)](https://github.com/user-attachments/assets/3823f0a2-8aca-49df-b84d-502454c421e7)
+
+
 ### The quickest way to install ScyllaDB is by using the provided script.
 
 ## 1. Run the installation script:
@@ -62,6 +65,8 @@ cqlsh
 ![Screenshot 2025-05-01 111345](https://github.com/user-attachments/assets/cff503de-aab4-4d94-ae1e-1e087a40e738)
 
 # Method 2. Manual installation method using APT repository for setting up ScyllaDB on Ubuntu
+
+![_- visual selection](https://github.com/user-attachments/assets/57363f9c-dcae-482e-984b-e66bf2b7d242)
 
 ## 1. Install a repo file and add the ScyllaDB APT repository to your system:
 
