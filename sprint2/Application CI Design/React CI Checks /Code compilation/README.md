@@ -177,10 +177,10 @@ Integrating React code compilation into CI ensures early detection of issues, op
 
 | **Link**                                                                                                 | **Description**     |
 | -------------------------------------------------------------------------------------------------------- | ------------------- |
-| [create react app.dev getting-started/](https://create-react-app.dev/docs/getting-started/) | Official CRA Docs   |
-| [vitejs.dev guide/](https://vitejs.dev/guide/)                                                   | Vite Documentation  |
+| [create react app.dev getting-started](https://create-react-app.dev/docs/getting-started/) | Official CRA Docs   |
+| [vitejs.dev guide](https://vitejs.dev/guide/)                                                   | Vite Documentation  |
 | [github actions](https://docs.github.com/en/actions)                                 | GitHub Actions Docs |
-| [babeljs.io/](https://babeljs.io/)                                                               | Babel Compiler      |
+| [babeljs.io](https://babeljs.io/)                                                               | Babel Compiler      |
 | [webpack.js.org guide](https://webpack.js.org/)                                                       | Webpack Guide       |
 
 ---
