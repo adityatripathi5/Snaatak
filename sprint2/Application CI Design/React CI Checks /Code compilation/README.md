@@ -169,7 +169,7 @@ Integrating React code compilation into CI ensures early detection of issues, op
 
 | **Name**    | **Email**                                                                         |
 | ----------- | --------------------------------------------------------------------------------- |
-| Aditya Tripathi | [aditya.tripathi.snaatak@mygrurukulam.co](mailto:mohit.saini.snaatak@mygrurukulam.co) |
+| Aditya Tripathi | [aditya.tripathi.snaatak@mygrurukulam.co](aditya.tripathi.snaatak@mygrurukulam.co) |
 
 ---
 
