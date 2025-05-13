@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/7cedd434-cf79-47c6-81a0-6ca46ddfecb3)
 
 ---
 
@@ -7,7 +8,6 @@
 | ----------- | -------------- | ----------- | ------------------- | ------------------ | --------------- | --------------- | --------------- |
 | Aditya Tripathi | 12-05-25       |       1      | Aditya Tripathi        | Priyansh    | Priyanka           | Rishabh        | Piyush        |
 
-![React Compilation Workflow](https://github.com/user-attachments/assets/sample-react-ci-diagram.png)
 
 ---
 
