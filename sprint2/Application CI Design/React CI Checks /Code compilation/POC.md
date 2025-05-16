@@ -10,9 +10,6 @@
 1. [Objective](#objective)
 2. [Pre-requisites](#pre-requisites)
 3. [Step-by-Step Guide](#step-by-step-guide)
-   3.1 [Clone the React App](#step-1-clone-the-react-app)
-   3.2 [Install Dependencies](#step-2-install-dependencies)
-   3.3 [Run Build Manually](#step-3-run-build-manually)
 4. [Contact Information](#contact-information)
 5. [References](#references)
 
