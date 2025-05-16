@@ -19,27 +19,28 @@
 4. [**React Compilation Process**](#react-compilation-process)
 5. [**Tools Used in React Compilation**](#tools-used-in-react-compilation)
 6. [**Comparison with Other Frontend Frameworks**](#comparison-with-other-frontend-frameworks)
-7. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
-8. [**Best Practices**](#best-practices)
-9. [**Recommendations & Conclusion**](#recommendations--conclusion)
-10. [**Contact Information**](#contact-information)
-11. [**References**](#references)
+7. [**Advantages**](#advantages)
+8. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
+9. [**Best Practices**](#best-practices)
+10. [**Recommendations & Conclusion**](#recommendations--conclusion)
+11. [**Contact Information**](#contact-information)
+12. [**References**](#references)
 
 ---
 
-# Introduction
+## Introduction
 
 React code must be transformed (compiled) from modern JavaScript (JSX, ES6+) into a format that browsers understand. This compilation step is crucial for production builds and is integrated into modern CI pipelines to ensure code correctness before deployment.
 
 ---
 
-# What is React Code Compilation?
+## What is React Code Compilation?
 
 It’s the process of converting JSX and modern JavaScript (ES6+) into standard JavaScript. This is handled by tools like **Babel** and **Webpack** during CI checks to validate build integrity.
 
 ---
 
-# Why Compile React Code?
+## Why Compile React Code?
 
 | **Reason**             | **Description**                                                   |
 | ---------------------- | ----------------------------------------------------------------- |
@@ -49,7 +50,7 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 
 ---
 
-# React Compilation Process
+## React Compilation Process
 
 | **Step**               | **Description**                                               |
 | ---------------------- | ------------------------------------------------------------- |
@@ -60,7 +61,7 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 
 ---
 
-# Tools Used in React Compilation
+## Tools Used in React Compilation
 
 | **Tool**     | **Purpose**                           | **Why Used**                                             |
 | ------------ | ------------------------------------- | -------------------------------------------------------- |
@@ -73,7 +74,7 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 
 ---
 
-# Comparison with Other Frontend Frameworks
+## Comparison with Other Frontend Frameworks
 
 | **Feature**        | **React**       | **Vue**        | **Angular** |
 | ------------------ | --------------- | -------------- | ----------- |
@@ -83,6 +84,17 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 | Tooling Complexity | Medium          | Low            | High        |
 
 ---
+## Advantages
+
+| **Advantage**                     | **Benefit**                                                                              |
+| --------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Early Error Detection**         | Build and syntax issues are caught before deployment.                                    |
+| **Automated Validation**          | Reduces manual testing by validating build integrity on each commit.                     |
+| **Consistent Build Output**       | CI ensures the same output across environments, reducing “works on my machine” problems. |
+| **Optimized Production Bundles**  | Automated minification and tree shaking lead to better performance.                      |
+| **Improved Developer Efficiency** | Developers focus on code while CI handles verification automatically.                    |
+| **Audit & Security Checks**       | Tools like `npm audit` can be integrated during compilation.                             |
+| **Standardized Workflow**         | Keeps the compilation, linting, and deployment steps consistent across teams.            |
 
 # POC - React Code Compilation via CI
 
