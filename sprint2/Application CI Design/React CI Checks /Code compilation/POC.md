@@ -15,7 +15,7 @@
 
 ---
 
-### Objective: Compile and verify a React project
+## Objective: Compile and verify a React project
 
 The objective of this POC is to demonstrate how to compile a simple React application into a production-ready static build. 
 
@@ -28,7 +28,7 @@ The objective of this POC is to demonstrate how to compile a simple React applic
 | React App         | Create using `npx create-react-app` |
 | CI Tool           | GitHub Actions                      |
 
-### Step-by-Step Guide:
+## Step-by-Step Guide:
 
 **Step 1**: Clone the React app
 
