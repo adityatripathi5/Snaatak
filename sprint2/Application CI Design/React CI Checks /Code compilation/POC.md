@@ -26,7 +26,7 @@ The objective of this POC is to demonstrate how to compile a simple React applic
 | OS                | Ubuntu-based runner (CI)            |
 | Node.js Version   | >= 16                               |
 | React App         | Create using `npx create-react-app` |
-| CI Tool           | GitHub Actions                      |
+
 
 ## Step-by-Step Guide:
 
