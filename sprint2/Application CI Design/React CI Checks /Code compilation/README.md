@@ -105,12 +105,16 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 git clone https://github.com/your-org/react-ci-demo.git
 cd react-ci-demo
 ```
+![Screenshot 2025-05-16 145357](https://github.com/user-attachments/assets/d820d2be-0e7b-4230-8573-a0bf7ad9ea9c)
+
 
 **Step 2**: Install dependencies
 
 ```bash
 npm install
 ```
+![Screenshot 2025-05-16 145456](https://github.com/user-attachments/assets/92e04e9a-93b8-4110-8a10-d6d7439a7d4f)
+
 
 **Step 3**: Run build manually
 
@@ -118,30 +122,9 @@ npm install
 npm run build
 ```
 
-**Step 4**: Setup `.github/workflows/react-build.yml`
+![Screenshot 2025-05-16 145846](https://github.com/user-attachments/assets/61fb44d5-11fb-4ba4-96f7-b1dc19325015)
+![Screenshot 2025-05-16 145953](https://github.com/user-attachments/assets/2b772b88-b5e7-4dee-bd53-23b4be8fcbc7)
 
-```yaml
-name: React CI Build
-
-on: [push, pull_request]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: npm install
-      - run: npm run build
-```
-
-**Step 5**: Validate CI
-Push changes → observe CI logs on GitHub Actions for build status.
-
----
 
 # Best Practices
 
