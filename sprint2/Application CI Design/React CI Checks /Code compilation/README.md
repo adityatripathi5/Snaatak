@@ -33,9 +33,6 @@ This document outlines the Continuous Integration (CI) design for React code com
 
 React code, written in JSX and modern JavaScript (ES6+), needs to be compiled into standard JavaScript that all browsers can understand. This compilation step—typically handled by tools like Babel, Webpack, or Vite—is integrated into CI pipelines to validate, optimize, and prepare the code for production use.
 
----
-
-Let me know if you'd like this tone applied to any other sections of your document.
 
 
 ---
