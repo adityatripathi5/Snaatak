@@ -86,44 +86,7 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 
 # POC - React Code Compilation via CI
 
-### Objective: Compile and verify a React project via CI (GitHub Actions)
-
-## Pre-requisites:
-
-| **Specification** | **Details**                         |
-| ----------------- | ----------------------------------- |
-| OS                | Ubuntu-based runner (CI)            |
-| Node.js Version   | >= 16                               |
-| React App         | Create using `npx create-react-app` |
-| CI Tool           | GitHub Actions                      |
-
-### Step-by-Step Guide:
-
-**Step 1**: Clone the React app
-
-```bash
-git clone https://github.com/your-org/react-ci-demo.git
-cd react-ci-demo
-```
-![Screenshot 2025-05-16 145357](https://github.com/user-attachments/assets/d820d2be-0e7b-4230-8573-a0bf7ad9ea9c)
-
-
-**Step 2**: Install dependencies
-
-```bash
-npm install
-```
-![Screenshot 2025-05-16 145456](https://github.com/user-attachments/assets/92e04e9a-93b8-4110-8a10-d6d7439a7d4f)
-
-
-**Step 3**: Run build manually
-
-```bash
-npm run build
-```
-
-![Screenshot 2025-05-16 145846](https://github.com/user-attachments/assets/61fb44d5-11fb-4ba4-96f7-b1dc19325015)
-![Screenshot 2025-05-16 145953](https://github.com/user-attachments/assets/2b772b88-b5e7-4dee-bd53-23b4be8fcbc7)
+- Please Refer Here for Code Compilation [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/React%20CI%20Checks%20/Code%20compilation/POC.md)
 
 
 # Best Practices
