@@ -14,29 +14,29 @@
 # Table of Contents
 
 1. [**Introduction**](#introduction)
-2. [**What is React Code Compilation?**](#what-is-react-code-compilation)
-3. [**Why Compile React Code?**](#why-compile-react-code)
-4. [**React Compilation Process**](#react-compilation-process)
-5. [**Tools Used in React Compilation**](#tools-used-in-react-compilation)
-6. [**Comparison with Other Frontend Frameworks**](#comparison-with-other-frontend-frameworks)
-7. [**Advantages**](#advantages)
-8. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
-9. [**Best Practices**](#best-practices)
-10. [**Recommendations & Conclusion**](#recommendations--conclusion)
-11. [**Contact Information**](#contact-information)
-12. [**References**](#references)
+2. [**Why Compile React Code?**](#why-compile-react-code)
+3. [**React Compilation Process**](#react-compilation-process)
+4. [**Tools Used in React Compilation**](#tools-used-in-react-compilation)
+5. [**Comparison with Other Frontend Frameworks**](#comparison-with-other-frontend-frameworks)
+6. [**Advantages**](#advantages)
+7. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
+8. [**Best Practices**](#best-practices)
+9. [**Recommendations & Conclusion**](#recommendations--conclusion)
+10. [**Contact Information**](#contact-information)
+11. [**References**](#references)
 
 ---
 
 ## Introduction
 
-React code must be transformed (compiled) from modern JavaScript (JSX, ES6+) into a format that browsers understand. This compilation step is crucial for production builds and is integrated into modern CI pipelines to ensure code correctness before deployment.
+This document outlines the Continuous Integration (CI) design for React code compilation in the **Frontend** module of the [OT-MICROSERVICES](https://github.com/OT-MICROSERVICES/) ecosystem. The goal is to automate the React build process as part of CI to ensure early detection of issues, consistent packaging across environments, and optimized production deployments.
+
+React code, written in JSX and modern JavaScript (ES6+), needs to be compiled into standard JavaScript that all browsers can understand. This compilation step—typically handled by tools like Babel, Webpack, or Vite—is integrated into CI pipelines to validate, optimize, and prepare the code for production use.
 
 ---
 
-## What is React Code Compilation?
+Let me know if you'd like this tone applied to any other sections of your document.
 
-It’s the process of converting JSX and modern JavaScript (ES6+) into standard JavaScript. This is handled by tools like **Babel** and **Webpack** during CI checks to validate build integrity.
 
 ---
 
