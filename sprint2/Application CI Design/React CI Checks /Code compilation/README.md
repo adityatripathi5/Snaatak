@@ -92,8 +92,6 @@ It’s the process of converting JSX and modern JavaScript (ES6+) into standard 
 | **Automated Validation**          | Reduces manual testing by validating build integrity on each commit.                     |
 | **Consistent Build Output**       | CI ensures the same output across environments, reducing “works on my machine” problems. |
 | **Optimized Production Bundles**  | Automated minification and tree shaking lead to better performance.                      |
-| **Improved Developer Efficiency** | Developers focus on code while CI handles verification automatically.                    |
-| **Audit & Security Checks**       | Tools like `npm audit` can be integrated during compilation.                             |
 | **Standardized Workflow**         | Keeps the compilation, linting, and deployment steps consistent across teams.            |
 
 # POC - React Code Compilation via CI
