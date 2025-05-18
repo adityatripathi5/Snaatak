@@ -80,7 +80,8 @@ Go code is statically compiled into a single executable binary, making it highly
 
 ## Workflow Diagram
 
-![image](https://github.com/user-attachments/assets/b5c04e14-45e1-4a82-b2b4-15c1d8dc05a6)
+![image](https://github.com/user-attachments/assets/a697503a-6044-4bfc-91f1-04b80a3476aa)
+
 
 ---
 
