@@ -4,7 +4,7 @@
 
 | **Author**      | **Created on** | **Version** | **Last updated by** | **Internal Reviewer** | **L0 Reviewer** | **L1 Reviewer** | **L2 Reviewer** |
 | --------------- | -------------- | ----------- | ------------------- | --------------------- | --------------- | --------------- | --------------- |
-| Aditya Tripathi | 15-05-25       | 1           | Aditya Tripathi     | Priyansh              | Priyanka        | Rishabh         | Piyush          |
+| Aditya Tripathi | 16-05-25       | 1           | Aditya Tripathi     | Priyansh              | Priyanka        | Rishabh         | Piyush          |
 
 ---
 
@@ -105,7 +105,7 @@ Authentication is the process of verifying a user's identity, whereas authorizat
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 * Always disable "Anyone can do anything".
 * Use **Built-in Auth** for small setups; prefer **LDAP/SSO** in enterprises.
