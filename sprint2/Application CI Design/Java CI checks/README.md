@@ -38,12 +38,7 @@ Unit testing is a way to test small pieces of code to make sure they work correc
 | **Documentation**          | Unit tests serve as living documentation, showing how code is intended to be used.                   |
 
 
-## POC - Java Unit Testing 
-
-- Please Refer Here for Unit Test [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/React%20CI%20Checks%20/Code%20compilation/POC.md)
-
-
-# Different Tools used in Unit Testing
+## Different Tools used in Unit Testing
 The list of several relevant testing frameworks for Java is mentioned below
 
 
@@ -57,6 +52,12 @@ The list of several relevant testing frameworks for Java is mentioned below
 | **Mockito** | Creates fake objects to test code. | Makes fake objects to replace real ones. Checks if fake objects are used correctly. Works with JUnit and TestNG. | Helps test without needing actual dependencies. Easy to use with clear syntax. | Doesn't support static methods without extra tools. Overuse can create bad test setups. |
 | **Selenium** | Automates browsers to test websites. | Works with Chrome, Firefox, Safari, and more. Can be used with JUnit and TestNG. | Tests work across browsers. Supports many languages like Java, Python. | Tests can be slow. Needs extra tools for advanced features. |
 | **Maven**     | Automates builds and manages dependencies. | Manages dependencies (e.g., JUnit, TestNG) using `pom.xml`. Plugins for testing (e.g., Surefire). Generates reports. | Simplifies dependency management. Automates test execution. Integrates easily with CI/CD tools. | Requires proper configuration to work effectively. Not a standalone testing tool.          |
+
+
+
+## POC - Java Unit Testing 
+
+- Please Refer Here for Unit Test [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/React%20CI%20Checks%20/Code%20compilation/POC.md)
 
 # Java Unit Testing using Junit
 
