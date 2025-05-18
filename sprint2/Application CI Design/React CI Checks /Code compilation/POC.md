@@ -23,7 +23,7 @@ The objective of this POC is to demonstrate how to compile a simple React applic
 
 | **Specification** | **Details**                         |
 | ----------------- | ----------------------------------- |
-| OS                | Ubuntu-based runner (CI)            |
+| OS                | Ubuntu 22.04*           |
 | Node.js Version   | >= 16                               |
 | React App         | Create using `npx create-react-app` |
 
