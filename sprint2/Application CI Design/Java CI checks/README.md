@@ -1,81 +1,145 @@
+Here is the **Java Unit Testing** document edited to match the format and quality of your React CI document, including the **improved table of contents**, consistent section headers, and clean formatting:
 
-#    **Java Unit Testing**
+---
 
-| **Author**  | **Created on** | **Version** | **Last updated by** | **Internal Reviewer** | **L0 Reviewer** | **L1 Reviewer** | **L2 Reviewer** |
-| ----------- | -------------- | ----------- | ------------------- | ------------------ | --------------- | --------------- | --------------- |
-| Aditya Tripathi | 13-05-25       |       1      | Aditya Tripathi        | Priyansh    | Priyanka           | Rishabh        | Piyush        |
+# **Documentation and POC of Java Unit Testing in CI Checks**
 
+| **Author**      | **Created on** | **Version** | **Last updated by** | **Internal Reviewer** | **L0 Reviewer** | **L1 Reviewer** | **L2 Reviewer** |
+| --------------- | -------------- | ----------- | ------------------- | --------------------- | --------------- | --------------- | --------------- |
+| Aditya Tripathi | 13-05-25       | 1           | Aditya Tripathi     | Priyansh              | Priyanka        | Rishabh         | Piyush          |
 
+---
 
-**Table of Contents**
+# Table of Contents
 
 1. [**Introduction**](#introduction)
-2. [**What is Unit Testing?**](#what-is-unit-testing?)
-3. [**Why Unit Testing?**](#why-unit-testing?)
-4. [**Different Tools used in Unit Testing**](#different-tools-used-in-unit-testing)
-5. [**POC - Java Unit Testing**](#poc--java-unit-testing)
-6. [**Conclusion**](#conclusion)
-7. [**Contact Information**](#contact-information)
-8. [**References**](#references)
+2. [**Why Unit Testing in CI?**](#why-unit-testing-in-ci)
+3. [**Java Unit Testing Process**](#java-unit-testing-process)
+4. [**Tools Used in Java Unit Testing**](#tools-used-in-java-unit-testing)
+5. [**Comparison with Other Language Testing Frameworks**](#comparison-with-other-language-testing-frameworks)
+6. [**Workflow Diagram**](#workflow-diagram)
+7. [**Advantages**](#advantages)
+8. [**POC - Java Unit Testing via CI**](#poc---java-unit-testing-via-ci)
+9. [**Best Practices**](#best-practices)
+10. [**Recommendations & Conclusion**](#recommendations--conclusion)
+11. [**Contact Information**](#contact-information)
+12. [**References**](#references)
 
-
+---
 
 ## Introduction
-Unit testing is like checking each piece to make sure it fits correctly and works as it should. By testing each piece individually, we can catch any mistakes early on and build a stronger, more stable castle. fixing errors in small parts of our code, so the whole program works correctly.
 
-## What is Unit Testing?
-
-Unit testing is a way to test small pieces of code to make sure they work correctly. It's like testing each brick in a wall to make sure it's strong and fits properly.
-
-## Why Unit Testing?
-
-| **Reasons**               | **Description**                                                                                      |
-|---------------------------|------------------------------------------------------------------------------------------------------|
-| **Early Bug Detection**    | It helps find and fix errors early in the development process, before they become bigger problems.    |
-| **Improved Code Quality**  | It encourages writing clean, well-structured, and maintainable code.                                 |
-| **Increased Confidence**   | By testing small parts of your code, you can be more confident that your software will work as expected. |
-| **Facilitates Refactoring**| It allows you to make changes to your code without fear of breaking things, as unit tests can quickly identify any unintended consequences. |
-| **Documentation**          | Unit tests serve as living documentation, showing how code is intended to be used.                   |
+This document describes the implementation of **Java Unit Testing**  workflows in the [OT-MICROSERVICES](https://github.com/OT-MICROSERVICES/) ecosystem. Unit tests validate the behavior of individual components in isolation to catch regressions early, promote code quality, and support safe code refactoring.
+Unit testing is a software testing method where individual units or components of a program are tested in isolation. A **unit** refers to the smallest testable part of an application—typically a function or method.
 
 
-## Different Tools used in Unit Testing
-The list of several relevant testing frameworks for Java is mentioned below
+---
 
+## Why Unit Testing in CI?
 
+| **Reason**              | **Description**                                                              |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| **Early Bug Detection** | Detects issues before they reach staging or production environments.         |
+| **Confidence in Code**  | Ensures code changes don’t break existing functionality.                     |
+| **Improved Quality**    | Encourages modular, testable, and maintainable code.                         |
+| **Safe Refactoring**    | Enables developers to refactor confidently by validating behavior via tests. |
+| **Live Documentation**  | Tests demonstrate expected use and behavior of code.                         |
 
+---
 
+## Java Unit Testing Process
 
-| Tool | What It Does | Key Features | Pros | Cons |
-|---|---|---|---|---|
-| **JUnit** | Used for testing small parts of Java programs. | Simple test annotations like @Test, @Before. Works well with IDEs like IntelliJ and Eclipse. | Easy to learn and use. Lots of community help available. | Can't run tests in parallel. Not great for very complex test setups. |
-| **TestNG** | A testing tool for all types of tests (unit, integration, etc.). | Extra features like @BeforeSuite, @DataProvider. Runs tests in parallel. Test configuration using XML. | Great for managing big test suites. Runs tests faster with parallel execution. | Harder to learn than JUnit. XML setup can be tricky. |
-| **Mockito** | Creates fake objects to test code. | Makes fake objects to replace real ones. Checks if fake objects are used correctly. Works with JUnit and TestNG. | Helps test without needing actual dependencies. Easy to use with clear syntax. | Doesn't support static methods without extra tools. Overuse can create bad test setups. |
-| **Selenium** | Automates browsers to test websites. | Works with Chrome, Firefox, Safari, and more. Can be used with JUnit and TestNG. | Tests work across browsers. Supports many languages like Java, Python. | Tests can be slow. Needs extra tools for advanced features. |
-| **Maven**     | Automates builds and manages dependencies. | Manages dependencies (e.g., JUnit, TestNG) using `pom.xml`. Plugins for testing (e.g., Surefire). Generates reports. | Simplifies dependency management. Automates test execution. Integrates easily with CI/CD tools. | Requires proper configuration to work effectively. Not a standalone testing tool.          |
+| **Step**          | **Description**                                                              |
+| ----------------- | ---------------------------------------------------------------------------- |
+| Write Unit Test   | Use frameworks like JUnit/TestNG to write test cases for individual methods. |
+| Mock Dependencies | Use Mockito or similar to mock external services or layers.                  |
+| Run Test in CI    | Tests are triggered in the pipeline using Maven/Gradle plugins.              |
+| Generate Reports  | Test reports and coverage are published as build artifacts or HTML reports.  |
 
+---
 
+## Tools Used in Java Unit Testing
 
-## POC - Java Unit Testing 
+| **Tool**      | **Purpose**                             | **Key Features**                                                   | **Why Used**                                             |
+| ------------- | --------------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------------- |
+| **JUnit**     | Unit test framework                     | Simple syntax, IDE support, annotations (`@Test`, `@Before`, etc.) | Default unit testing tool for Java applications          |
+| **TestNG**    | Test framework with advanced features   | XML configs, parallel testing, data providers                      | Suitable for complex test flows or test suites           |
+| **Mockito**   | Mocking framework                       | Simulates dependencies, verifies interactions                      | Helps test components in isolation                       |
+| **Maven**     | Build and test automation               | Executes tests via `mvn test`, manages dependencies                | Integrates seamlessly with JUnit/TestNG and CI pipelines |
+| **JaCoCo**    | Code coverage analysis                  | Generates code coverage reports in CI                              | Measures how much code is covered by tests               |
+| **SonarQube** | Static code analysis and test reporting | Analyzes code quality, enforces test coverage thresholds           | Integrates with CI for enforcing code quality gates      |
 
-- Please Refer Here for Unit Test [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/React%20CI%20Checks%20/Code%20compilation/POC.md)
+---
 
+## Comparison with Other Language Testing Frameworks
 
+| **Language** | **Framework**          | **Highlights**                                 | **Java Equivalent** |
+| ------------ | ---------------------- | ---------------------------------------------- | ------------------- |
+| JavaScript   | Jest                   | Snapshot testing, fast, integrated with React  | JUnit + Mockito     |
+| Python       | PyTest                 | Simple syntax, fixtures                        | JUnit               |
+| Go           | Testing package        | Built-in, lightweight, uses `go test`          | JUnit/TestNG        |
+| Java         | JUnit/TestNG + Mockito | Rich features, IDE support, mocking frameworks | —                   |
 
-## Conclusion
+---
 
-The goal of unit testing is to make sure that any new functionality does not break the existing functionality. It also helps identify any issues or bugs earlier in the development process and helps ensure that code meets quality standards set by the organisation.
+## Workflow Diagram
 
-##  Contact Information
+> *\[Insert diagram if needed. You may use tools like Lucidchart or draw\.io and embed a link or image.]*
 
+---
 
-| **Name**    | **Email address**         |
-|-------------|---------------------------|
-| Aditya Tripathi | aditya.tripathi.snaatak@mygurukulam.co |
+## Advantages
 
+| **Advantage**                | **Benefit**                                                |
+| ---------------------------- | ---------------------------------------------------------- |
+| **Automation**               | Tests run on every commit in CI/CD pipelines               |
+| **Scalability**              | Easily test individual units in large projects             |
+| **Documentation**            | Shows how code is expected to behave                       |
+| **Build Stability**          | Prevents merging of code that breaks existing features     |
+| **Quality Gate Enforcement** | Integrates with SonarQube to enforce minimum code coverage |
+
+---
+
+## POC - Java Unit Testing via CI
+
+* Please Refer Here for Unit Test [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/Java%20CI%20Checks/Unit%20Testing/POC.md)
+
+---
+
+## Best Practices
+
+* Write **clear and atomic** test cases.
+* Follow naming conventions: `testMethodName_shouldExpectedBehavior_whenCondition`.
+* Use **mocking** for external services or databases.
+* Run tests in **CI/CD pipelines** (`mvn test` or `./gradlew test`).
+* Use **code coverage tools** (e.g., JaCoCo) to enforce minimum coverage.
+* Integrate **SonarQube** for quality gates and reporting.
+* Isolate unit tests from **integration tests**.
+
+---
+
+## Recommendations & Conclusion
+
+Java Unit Testing integrated into CI ensures that every change to the codebase is validated quickly and efficiently. Adopting tools like JUnit, Mockito, and Maven with CI plugins improves quality, prevents regressions, and fosters developer confidence. Teams should maintain proper test coverage and continuously refactor tests to reflect updated business logic.
+
+---
+
+## Contact Information
+
+| **Name**        | **Email**                                                                               |
+| --------------- | --------------------------------------------------------------------------------------- |
+| Aditya Tripathi | [aditya.tripathi.snaatak@mygurukulam.co](mailto:aditya.tripathi.snaatak@mygurukulam.co) |
+
+---
 
 ## References
 
-| **Link** | **Description** |
-|------------------------------------------------------|------------------|
-|[Testing Framework for Java](https://www.geeksforgeeks.org/7-best-testing-frameworks-for-java-developers/)| Unit Testing |
-| [Java Unit Testing](https://www.freecodecamp.org/news/java-unit-testing/)| Unit Testing tool |
+| **Link**                                                                                                                | **Description**             |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| [GeeksforGeeks - Java Testing Frameworks](https://www.geeksforgeeks.org/7-best-testing-frameworks-for-java-developers/) | Overview of Java test tools |
+| [FreeCodeCamp - Java Unit Testing](https://www.freecodecamp.org/news/java-unit-testing/)                                | Unit testing tutorial       |
+| [JUnit Docs](https://junit.org/junit5/docs/current/user-guide/)                                                         | Official JUnit Guide        |
+| [Mockito Docs](https://site.mockito.org/)                                                                               | Mockito User Guide          |
+| [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/)                                       | Run and manage test suites  |
+
+---
