@@ -86,7 +86,7 @@ This ensures a **cost-effective, scalable, and secure infrastructure** aligned w
 
 | Name            | Email Address                                                                           |
 | --------------- | --------------------------------------------------------------------------------------- |
-| Aditya Tripathi | [aditya.tripathi.snaatak@mygurukulam.co]                                                |
+| Aditya Tripathi | aditya.tripathi.snaatak@mygurukulam.co                                                |
 
 ---
 
