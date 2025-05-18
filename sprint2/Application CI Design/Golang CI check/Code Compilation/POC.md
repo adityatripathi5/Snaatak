@@ -42,7 +42,8 @@ git clone https://github.com/your-org/go-ci-demo.git
 cd go-ci-demo
 ```
 
-![Clone Go Repo](https://github.com/user-attachments/assets/your-clone-step-screenshot.png)
+![Screenshot 2025-05-18 151359](https://github.com/user-attachments/assets/f558c01c-ead3-4467-a149-70aadb47dc99)
+
 
 ---
 
@@ -54,7 +55,8 @@ go mod tidy
 
 This command ensures that all required modules are listed and unnecessary ones are removed.
 
-![Go Mod Tidy](https://github.com/user-attachments/assets/your-tidy-screenshot.png)
+![Screenshot 2025-05-18 151319](https://github.com/user-attachments/assets/bad30208-db0a-49e7-a97e-c1cc207c821c)
+
 
 ---
 
@@ -66,7 +68,8 @@ go build -o output-binary-name main.go
 
 This will generate a binary (`output-binary-name`) in the current directory if the code compiles successfully.
 
-![Go Build](https://github.com/user-attachments/assets/your-build-screenshot.png)
+![Screenshot 2025-05-18 151928](https://github.com/user-attachments/assets/e12e4cdd-44fd-44c9-908d-8ac782d4d972)
+
 
 
 
