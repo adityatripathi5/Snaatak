@@ -26,7 +26,7 @@ The objective of this POC is to demonstrate how to execute unit tests for a Java
 
 | **Specification** | **Details**              |
 | ----------------- | ------------------------ |
-| OS                | Ubuntu-based runner (CI) |
+| OS                | Ubuntu 22.04* |
 | Java Version      | >= 17                    |
 | Maven             | Installed (`mvn` CLI)    |
 | Testing Framework | JUnit                    |
