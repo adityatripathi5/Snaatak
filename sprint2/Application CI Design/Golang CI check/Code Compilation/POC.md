@@ -68,17 +68,7 @@ This will generate a binary (`output-binary-name`) in the current directory if t
 
 ![Go Build](https://github.com/user-attachments/assets/your-build-screenshot.png)
 
----
 
-**Step 4**: Run the binary (optional test)
-
-```bash
-./output-binary-name
-```
-
-You should see logs or outputs indicating the app is running.
-
-![Go Run](https://github.com/user-attachments/assets/your-run-screenshot.png)
 
 ---
 
