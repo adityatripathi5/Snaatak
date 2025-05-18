@@ -76,7 +76,7 @@ This document outlines the **Cost Optimization Designing** strategy for infrastr
 
 Cloud cost optimization is an ongoing discipline, not a one-time activity. By proactively monitoring resource utilization and adjusting architectures for efficiency, teams can significantly reduce AWS bills while maintaining performance and scalability.
 
-> In our project, we will implement regular cost reviews, enforce budgets, and use a mix of **Savings Plans**, **Spot Instances**, and **Auto Scaling**. Idle resources will be cleaned up via automation scripts and observability tools like CloudWatch and Trusted Advisor.
+> In our project, we will implement regular cost reviews, enforce budgets, and use a mix of **Savings Plans**, **Spot Instances**, and **Auto Scaling**. Idle resources will be cleaned up via automation scripts and observability tools like CloudWatch.
 
 This ensures a **cost-effective, scalable, and secure infrastructure** aligned with both technical and business goals.
 
