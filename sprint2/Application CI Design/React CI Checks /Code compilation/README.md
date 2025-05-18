@@ -18,12 +18,13 @@
 3. [**React Compilation Process**](#react-compilation-process)
 4. [**Tools Used in React Compilation**](#tools-used-in-react-compilation)
 5. [**Comparison with Other Frontend Frameworks**](#comparison-with-other-frontend-frameworks)
-6. [**Advantages**](#advantages)
-7. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
-8. [**Best Practices**](#best-practices)
-9. [**Recommendations & Conclusion**](#recommendations--conclusion)
-10. [**Contact Information**](#contact-information)
-11. [**References**](#references)
+6. [**Workflow Diagram**](#workflow-diagram)
+7. [**Advantages**](#advantages)
+8. [**POC - React Code Compilation via CI**](#poc---react-code-compilation-via-ci)
+9. [**Best Practices**](#best-practices)
+10. [**Recommendations & Conclusion**](#recommendations--conclusion)
+11. [**Contact Information**](#contact-information)
+12. [**References**](#references)
 
 ---
 
@@ -79,6 +80,14 @@ React code, written in JSX and modern JavaScript (ES6+), needs to be compiled in
 | CI Integration     | Easy            | Easy           | Complex     |
 | Build Speed        | Fast (Vite)     | Very Fast      | Medium      |
 | Tooling Complexity | Medium          | Low            | High        |
+
+---
+
+## Workflow Diagram
+
+![image](https://github.com/user-attachments/assets/7583ad8a-87c2-4e36-8afa-e58a323f66fe)
+
+
 
 ---
 ## Advantages
