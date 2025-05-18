@@ -143,10 +143,13 @@ We also plan to conduct **regular audits** to ensure secure and efficient access
 
 ## References
 
-* [Jenkins Authentication Docs](https://www.jenkins.io/doc/book/security/authentication/)
-* [Jenkins Authorization Strategies](https://www.jenkins.io/doc/book/security/authorization/)
-* [Role Strategy Plugin](https://plugins.jenkins.io/role-strategy/)
-* [Using SSO in Jenkins](https://plugins.jenkins.io/saml/)
-* [OAuth Plugin](https://plugins.jenkins.io/oic-auth/)
+| **Link**                                                                                    | **Description**                                  |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| [Jenkins Authentication Docs](https://www.jenkins.io/doc/book/security/authentication/)     | Official documentation on Jenkins authentication |
+| [Jenkins Authorization Strategies](https://www.jenkins.io/doc/book/security/authorization/) | Guide to authorization strategies in Jenkins     |
+| [Role Strategy Plugin](https://plugins.jenkins.io/role-strategy/)                           | Plugin for role-based access control in Jenkins  |
+| [Using SSO in Jenkins](https://plugins.jenkins.io/saml/)                                    | SAML plugin for integrating SSO with Jenkins     |
+| [OAuth Plugin](https://plugins.jenkins.io/oic-auth/)                                        | Plugin for OAuth/OpenID Connect authentication   |
+
 
 ---
