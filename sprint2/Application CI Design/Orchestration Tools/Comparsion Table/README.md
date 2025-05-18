@@ -58,15 +58,15 @@ BuildPiper is a CI orchestration and microservices delivery platform designed to
 
 ### Jenkins Workflow
 
-![Jenkins Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/SHREY-SCRUM-170/application_ci/tools/orchestration/jenkins/README.md#jenkins-workflow-diagram)
+[Jenkins Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/SHREY-SCRUM-170/application_ci/tools/orchestration/jenkins/README.md#jenkins-workflow-diagram)
 
 ### GitLab Workflow
 
-![GitLab Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Shubham_SCRUM-171/application_ci/tools/orchestration/gitlab/README.md#Workflow-Diagram)
+[GitLab Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Shubham_SCRUM-171/application_ci/tools/orchestration/gitlab/README.md#Workflow-Diagram)
 
 ### BuildPiper Workflow
 
-![BuildPiper Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Tharik_SCRUM-172/application_ci/tools/orchestration/buildpiper/README.md#workflow-diagram)
+[BuildPiper Workflow](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Tharik_SCRUM-172/application_ci/tools/orchestration/buildpiper/README.md#workflow-diagram)
 
 ---
 
