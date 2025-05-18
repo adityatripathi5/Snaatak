@@ -20,14 +20,14 @@
 
 
 
-# Introduction
+## Introduction
 Unit testing is like checking each piece to make sure it fits correctly and works as it should. By testing each piece individually, we can catch any mistakes early on and build a stronger, more stable castle. fixing errors in small parts of our code, so the whole program works correctly.
 
-# What is Unit Testing?
+## What is Unit Testing?
 
 Unit testing is a way to test small pieces of code to make sure they work correctly. It's like testing each brick in a wall to make sure it's strong and fits properly.
 
-# Why Unit Testing?
+## Why Unit Testing?
 
 | **Reasons**               | **Description**                                                                                      |
 |---------------------------|------------------------------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ Unit testing is a way to test small pieces of code to make sure they work correc
 | **Documentation**          | Unit tests serve as living documentation, showing how code is intended to be used.                   |
 
 
-# POC - Java Unit Testing 
+## POC - Java Unit Testing 
 
 - Please Refer Here for Unit Test [POC](https://github.com/adityatripathi5/Snaatak/blob/main/sprint2/Application%20CI%20Design/React%20CI%20Checks%20/Code%20compilation/POC.md)
 
@@ -93,11 +93,11 @@ mvn test
 
 
 
-# Conclusion
+## Conclusion
 
 The goal of unit testing is to make sure that any new functionality does not break the existing functionality. It also helps identify any issues or bugs earlier in the development process and helps ensure that code meets quality standards set by the organisation.
 
-#  Contact Information
+##  Contact Information
 
 
 | **Name**    | **Email address**         |
@@ -105,7 +105,7 @@ The goal of unit testing is to make sure that any new functionality does not bre
 | Aditya Tripathi | aditya.tripathi.snaatak@mygurukulam.co |
 
 
-# References
+## References
 
 | **Link** | **Description** |
 |------------------------------------------------------|------------------|
