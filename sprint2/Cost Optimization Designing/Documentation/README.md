@@ -48,26 +48,27 @@ This document outlines the **Cost Optimization Designing** strategy for infrastr
 
 ## Advantages of Cost Optimization
 
-* **Cost Savings**: Reduce overall cloud bills significantly.
-* **Operational Efficiency**: Align resources with actual usage.
-* **Scalability**: Build cost-aware architectures that scale smartly.
-* **Security**: Decommission unused services that may pose risks.
-* **Sustainability**: Reduce carbon footprint by avoiding resource wastage.
+| **Benefit**                | **Description**                                      |
+| -------------------------- | ---------------------------------------------------- |
+| **Cost Savings**           | Reduce overall cloud bills significantly             |
+| **Operational Efficiency** | Align resources with actual usage                    |
+| **Scalability**            | Build cost-aware architectures that scale smartly    |
+| **Security**               | Decommission unused services that may pose risks     |
+| **Sustainability**         | Reduce carbon footprint by avoiding resource wastage |
+
 
 ---
 
 ## Best Practices
 
-1. **Use AWS Budgets and Alerts** to monitor and enforce spend thresholds.
-2. **Enable AWS Cost Explorer** to analyze spending patterns.
-3. **Apply Auto Scaling** for EC2 and ECS to match real-time demand.
-4. **Use Spot Instances** for stateless or non-critical workloads.
-5. **Purchase Reserved Instances or Savings Plans** for predictable workloads.
-6. **Right-size EC2 and RDS instances** based on usage metrics.
-7. **Use S3 Lifecycle Policies** to move data to cheaper storage classes (Glacier/IA).
-8. **Decommission Idle Resources** (e.g., EBS volumes, unused IPs, ELBs).
-9. **Use Compute Optimizer & Trusted Advisor** for optimization suggestions.
-10. **Centralize Logging** and limit retention for cost-effective observability.
+| **Practice**                                                               | **Description**                                                        |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Right-size EC2 and RDS instances** based on usage metrics                | Match instance types/sizes to workload needs to avoid overprovisioning |
+| **Purchase Reserved Instances or Savings Plans** for predictable workloads | Commit to long-term usage for significant cost savings                 |
+| **Apply Auto Scaling** for EC2 and ECS to match real-time demand           | Dynamically adjust capacity based on traffic or workload               |
+| **Use Spot Instances** for stateless or non-critical workloads             | Reduce costs by using spare AWS compute capacity                       |
+| **Decommission Idle Resources** (e.g., EBS volumes, unused IPs, ELBs)      | Remove unused infrastructure to eliminate waste                        |
+
 
 ---
 
