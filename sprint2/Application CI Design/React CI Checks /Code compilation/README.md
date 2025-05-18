@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/7cedd434-cf79-47c6-81a0-6ca46ddfecb3)
 
 ---
 
