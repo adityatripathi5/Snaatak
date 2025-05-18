@@ -4,7 +4,7 @@
 
 | **Author**      | **Created on** | **Version** | **Last updated by** | **Internal Reviewer** | **L0 Reviewer** | **L1 Reviewer** | **L2 Reviewer** |
 | --------------- | -------------- | ----------- | ------------------- | --------------------- | --------------- | --------------- | --------------- |
-| Aditya Tripathi | 2025-05-18     | 1.0         | Aditya Tripathi     | Priyansh              | Priyanka        | Rishabh         | Piyush          |
+| Aditya Tripathi | 17-05-2025    | 1.0         | Aditya Tripathi     | Priyansh              | Priyanka        | Rishabh         | Piyush          |
 
 ---
 
@@ -86,7 +86,7 @@ This ensures a **cost-effective, scalable, and secure infrastructure** aligned w
 
 | Name            | Email Address                                                                           |
 | --------------- | --------------------------------------------------------------------------------------- |
-| Aditya Tripathi | [aditya.tripathi.snaatak@mygurukulam.co](mailto:aditya.tripathi.snaatak@mygurukulam.co) |
+| Aditya Tripathi | [aditya.tripathi.snaatak@mygurukulam.co]                                                |
 
 ---
 
