@@ -6,37 +6,44 @@ pipeline {
   }
 
   stages {
-    stage('Security Scan') {
+    stage('Build') {
       steps {
+        echo "Simulating build..."
+        sh 'echo Build completed'
+      }
+    }
+  }
+
+  post {
+    always {
+      echo "Generating AI log summary..."
+
+      withCredentials([string(credentialsId: 'anthropic-api-key', variable: 'ANTHROPIC_API_KEY')]) {
         script {
-          def codeSnippet = """
-          const AWS_KEY = 'AKIA1234567890';
+          def logs = currentBuild.rawBuild.getLog(200).join("\n")
+
+          sh """
+            jq -n \
+              --arg model "$CLAUDE_MODEL" \
+              --arg msg "$logs" \
+              '{
+                model: \$model,
+                max_tokens: 200,
+                messages: [{
+                  role: "user",
+                  content: ("Summarize this Jenkins pipeline execution in plain English: " + \$msg)
+                }]
+              }' > request.json
+
+            curl -s https://api.anthropic.com/v1/messages \
+              -H "x-api-key: ${ANTHROPIC_API_KEY}" \
+              -H "anthropic-version: 2023-06-01" \
+              -H "content-type: application/json" \
+              -d @request.json \
+              -o response.json || true
+
+            jq -r '.content[0].text // "Summary unavailable"' response.json
           """
-
-          withCredentials([string(credentialsId: 'anthropic-api-key', variable: 'ANTHROPIC_API_KEY')]) {
-            sh """
-              jq -n \
-                --arg model "$CLAUDE_MODEL" \
-                --arg msg "$codeSnippet" \
-                '{
-                  model: \$model,
-                  max_tokens: 200,
-                  messages: [{
-                    role: "user",
-                    content: ("Check this code for security risks or secrets. Respond SAFE or explain issue: " + \$msg)
-                  }]
-                }' > request.json
-
-              curl -s https://api.anthropic.com/v1/messages \
-                -H "x-api-key: ${ANTHROPIC_API_KEY}" \
-                -H "anthropic-version: 2023-06-01" \
-                -H "content-type: application/json" \
-                -d @request.json \
-                -o response.json || true
-
-              jq -r '.content[0].text // "Security scan unavailable"' response.json
-            """
-          }
         }
       }
     }
