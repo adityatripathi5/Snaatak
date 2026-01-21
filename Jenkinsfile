@@ -1,3 +1,32 @@
+flowchart LR
+    %% Styles
+    classDef git fill:#f9f,stroke:#333,stroke-width:2px,color:black;
+    classDef argo fill:#9cf,stroke:#333,stroke-width:2px,color:black;
+    classDef eks fill:#fc9,stroke:#333,stroke-width:2px,color:black;
+
+    subgraph "Source of Truth (GitOps)"
+        Dev[Developer] -->|1. Push Code| Git[Git Repository\n(GitHub/GitLab)]
+        Git -.->|Desired State| YAML[Manifests/Helm Charts]
+    end
+
+    subgraph "The Sync Engine"
+        Argo[Argo CD] -->|2. Pull/Watch| Git
+        Argo -->|3. Compare State| Argo
+    end
+
+    subgraph "Destination (AWS)"
+        Argo -->|4. Sync/Apply| EKS[AWS EKS Cluster]
+        EKS -->|5. Feedback/Status| Argo
+    end
+
+    class Git,YAML git;
+    class Argo argo;
+    class EKS eks;
+
+
+
+
+
 pipeline {
   agent any
 
