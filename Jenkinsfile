@@ -1,3 +1,6 @@
+
+
+```mermaid
 flowchart LR
     %% Styles
     classDef git fill:#f9f,stroke:#333,stroke-width:2px,color:black;
@@ -22,6 +25,8 @@ flowchart LR
     class Git,YAML git;
     class Argo argo;
     class EKS eks;
+
+```
 
 
 
