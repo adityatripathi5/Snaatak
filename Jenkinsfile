@@ -6,32 +6,33 @@ pipeline {
   }
 
   stages {
-    stage('Build') {
+    stage('Collect Change Context') {
       steps {
-        echo "Simulating build..."
-        sh 'echo Build completed'
+        script {
+          env.CHANGE_SUMMARY = """
+          Service: payment-api
+          Changed files:
+          - PaymentService.java
+          - RetryPolicy.yaml
+          Database calls modified
+          """
+        }
       }
     }
-  }
 
-  post {
-    always {
-      echo "Generating AI log summary..."
-
-      withCredentials([string(credentialsId: 'anthropic-api-key', variable: 'ANTHROPIC_API_KEY')]) {
-        script {
-          def logs = currentBuild.rawBuild.getLog(200).join("\n")
-
+    stage('AI Change Impact Analysis') {
+      steps {
+        withCredentials([string(credentialsId: 'anthropic-api-key', variable: 'ANTHROPIC_API_KEY')]) {
           sh """
             jq -n \
               --arg model "$CLAUDE_MODEL" \
-              --arg msg "$logs" \
+              --arg msg "$CHANGE_SUMMARY" \
               '{
                 model: \$model,
-                max_tokens: 200,
+                max_tokens: 300,
                 messages: [{
                   role: "user",
-                  content: ("Summarize this Jenkins pipeline execution in plain English: " + \$msg)
+                  content: ("Analyze change impact for production systems. Identify affected components, risks, and recommended checks: " + \$msg)
                 }]
               }' > request.json
 
@@ -42,7 +43,7 @@ pipeline {
               -d @request.json \
               -o response.json || true
 
-            jq -r '.content[0].text // "Summary unavailable"' response.json
+            jq -r '.content[0].text' response.json
           """
         }
       }
